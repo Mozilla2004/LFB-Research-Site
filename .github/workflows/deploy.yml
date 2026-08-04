@@ -33,10 +33,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List build output
+        run: ls -la
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: .next
 
   deploy:
     environment:
