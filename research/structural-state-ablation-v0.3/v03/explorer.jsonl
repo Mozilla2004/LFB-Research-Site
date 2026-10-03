@@ -1,0 +1,9 @@
+{"step": 1, "op": "probe", "candidate": "A2", "result": {"accepted": false, "excluded": ["A1", "A2", "A3", "A4"], "certificate": "family A retired"}}
+{"step": 2, "op": "probe", "candidate": "F1", "result": {"accepted": false, "excluded": ["F1", "F2", "F3", "F4"], "certificate": "family F retired"}}
+{"step": 3, "op": "probe", "candidate": "B1", "result": {"accepted": false, "excluded": ["A1", "B1", "C1", "D1", "E1", "F1"], "certificate": "variant 1 discontinued everywhere"}}
+{"step": 4, "op": "probe", "candidate": "E4", "result": {"accepted": false, "excluded": ["A4", "B4", "C4", "D4", "E4", "F4"], "certificate": "variant 4 discontinued everywhere"}}
+{"step": 5, "op": "probe", "candidate": "B3", "result": {"accepted": false, "excluded": ["B3", "B4"], "certificate": "family B unavailable at variants 3 and above"}}
+{"step": 6, "op": "probe", "candidate": "C3", "result": {"accepted": false, "excluded": ["C3", "D3"], "certificate": "variant 3 unavailable in families C and D"}}
+{"step": 7, "op": "probe", "candidate": "D2", "result": {"accepted": false, "excluded": ["D1", "D2", "D3", "D4"], "certificate": "family D unavailable"}}
+{"step": 8, "op": "probe", "candidate": "C2", "result": {"accepted": null, "excluded": [], "status": "conditional", "certificate": "C2 availability rule: unavailable while any family-D variant-2 unit is deployable; a probe restates this rule and does not resolve it"}}
+{"step": 9, "op": "probe", "candidate": "E2", "result": {"accepted": null, "excluded": [], "status": "conditional", "certificate": "E2 availability rule: available for batch deployment profiles, unavailable for extended profiles; a probe restates this rule and does not resolve it"}}

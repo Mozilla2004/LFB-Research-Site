@@ -1,0 +1,166 @@
+{
+  "description": "Canonical Deduction Inventory for Capability Transfer v0.3. Derived ONLY from the frozen Stage-1 evidence bank (bank.json) and the shared task rules (task.md). No environment queries were made during compilation. Every deduction is traceable to source evidence or to task rules. This inventory is the single canonical source rendered into handoffs P and S.",
+  "compilation_metadata": {
+    "inputs": ["bank.json", "task.md"],
+    "environment_queries_during_compilation": 0,
+    "compiler": "coordinator (deterministic authoring from the two inputs; no oracle.py invocation)"
+  },
+  "deductions": [
+    {
+      "id": "D01",
+      "type": "exclusion",
+      "evidence": ["E01"],
+      "depends_on": [],
+      "basis": "task rule: a rejection certificate rules out every candidate in its stated scope",
+      "scope": "family A: A1, A2, A3, A4",
+      "consequence": "A1, A2, A3 and A4 are all unavailable; the entire family A is out of consideration.",
+      "status": "valid, directly evidenced",
+      "affects": ["A1", "A2", "A3", "A4"],
+      "candidate_space_note": "removes A1, A2, A3, A4 from the 24-candidate space"
+    },
+    {
+      "id": "D02",
+      "type": "exclusion",
+      "evidence": ["E02"],
+      "depends_on": [],
+      "basis": "task rule: a rejection certificate rules out every candidate in its stated scope",
+      "scope": "family F: F1, F2, F3, F4",
+      "consequence": "F1, F2, F3 and F4 are all unavailable; the entire family F is out of consideration.",
+      "status": "valid, directly evidenced",
+      "affects": ["F1", "F2", "F3", "F4"],
+      "candidate_space_note": "removes F1, F2, F3, F4 from the 24-candidate space"
+    },
+    {
+      "id": "D03",
+      "type": "exclusion",
+      "evidence": ["E03"],
+      "depends_on": [],
+      "basis": "task rule: a rejection certificate rules out every candidate in its stated scope",
+      "scope": "variant column 1: A1, B1, C1, D1, E1, F1",
+      "consequence": "Every variant-1 candidate is unavailable in all families.",
+      "status": "valid, directly evidenced",
+      "affects": ["A1", "B1", "C1", "D1", "E1", "F1"],
+      "candidate_space_note": "removes the variant-1 column (members not already removed by D01/D02: B1, C1, D1, E1)"
+    },
+    {
+      "id": "D04",
+      "type": "exclusion",
+      "evidence": ["E04"],
+      "depends_on": [],
+      "basis": "task rule: a rejection certificate rules out every candidate in its stated scope",
+      "scope": "variant column 4: A4, B4, C4, D4, E4, F4",
+      "consequence": "Every variant-4 candidate is unavailable in all families.",
+      "status": "valid, directly evidenced",
+      "affects": ["A4", "B4", "C4", "D4", "E4", "F4"],
+      "candidate_space_note": "removes the variant-4 column (members not already removed: B4, C4, D4)"
+    },
+    {
+      "id": "D05",
+      "type": "exclusion",
+      "evidence": ["E05"],
+      "depends_on": [],
+      "basis": "task rule: a rejection certificate rules out every candidate in its stated scope",
+      "scope": "family B at variants 3 and above: B3, B4",
+      "consequence": "B3 and B4 are unavailable; this certificate does not cover B1 or B2.",
+      "status": "valid, directly evidenced",
+      "affects": ["B3", "B4"],
+      "candidate_space_note": "removes B3 (B4 is already removed by D04)"
+    },
+    {
+      "id": "D06",
+      "type": "exclusion",
+      "evidence": ["E06"],
+      "depends_on": [],
+      "basis": "task rule: a rejection certificate rules out every candidate in its stated scope",
+      "scope": "variant 3 within families C and D: C3, D3",
+      "consequence": "C3 and D3 are unavailable; variant 3 elsewhere is not covered by this certificate.",
+      "status": "valid, directly evidenced",
+      "affects": ["C3", "D3"],
+      "candidate_space_note": "removes C3 and D3"
+    },
+    {
+      "id": "D07",
+      "type": "exclusion",
+      "evidence": ["E07"],
+      "depends_on": [],
+      "basis": "task rule: a rejection certificate rules out every candidate in its stated scope",
+      "scope": "family D: D1, D2, D3, D4",
+      "consequence": "The entire family D is unavailable, including D2, the only variant-2 candidate in family D.",
+      "status": "valid, directly evidenced",
+      "affects": ["D1", "D2", "D3", "D4"],
+      "candidate_space_note": "removes D2 (D1, D3, D4 already removed by D03/D06/D04)"
+    },
+    {
+      "id": "D08",
+      "type": "candidate_space",
+      "evidence": ["E01", "E02", "E03", "E04", "E05", "E06", "E07"],
+      "depends_on": ["D01", "D02", "D03", "D04", "D05", "D06", "D07"],
+      "basis": "enumeration of the 24-candidate space minus the union of the exclusion scopes D01 through D07",
+      "scope": "whole candidate space",
+      "consequence": "Exactly four candidates are not excluded by any frozen certificate: B2, C2, E2 and E3. Every other candidate is unavailable, so all further work concerns only these four branches.",
+      "status": "valid, derived",
+      "affects": ["B2", "C2", "E2", "E3"],
+      "candidate_space_note": "candidate space reduced from 24 to 4: {B2, C2, E2, E3}"
+    },
+    {
+      "id": "D09",
+      "type": "dependency_resolution",
+      "evidence": ["E08"],
+      "depends_on": ["D07"],
+      "basis": "conditional-rule resolution: the rule's stated terms evaluated against established evidence (no new probe)",
+      "scope": "candidate C2",
+      "consequence": "C2's rule blocks it only while some family-D variant-2 unit is deployable. By D07 the entire family D is unavailable, so no family-D variant-2 unit is deployable, the blocking condition is false, and C2 is service-compatible. A probe would only restate the rule and cannot confirm this.",
+      "status": "valid, deduced (not directly observed)",
+      "affects": ["C2"],
+      "candidate_space_note": "C2 is an available member of the remaining four"
+    },
+    {
+      "id": "D10",
+      "type": "conditional_status",
+      "evidence": ["E09"],
+      "depends_on": [],
+      "basis": "conditional-rule reading: compatibility depends on the deployment profile, which is not part of Stage-1 knowledge",
+      "scope": "candidate E2",
+      "consequence": "E2 is service-compatible if the eventual deployment profile is batch, and unavailable if the profile is extended. E2's compatibility therefore remains unresolved until the deployment requirement is revealed.",
+      "status": "conditional, open at handoff",
+      "affects": ["E2"],
+      "candidate_space_note": "E2 remains in the space with a profile-dependent status (partial success)"
+    },
+    {
+      "id": "D11",
+      "type": "open_branches",
+      "evidence": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09"],
+      "depends_on": ["D08"],
+      "basis": "absence of evidence: no frozen observation or rule covers B2 or E3",
+      "scope": "candidates B2 and E3",
+      "consequence": "B2 and E3 carry no availability information in the frozen evidence: they are neither excluded nor governed by any known rule. Their compatibility is unknown and can only be established during continuation, for example by probing or by the outcome of a submission.",
+      "status": "open",
+      "affects": ["B2", "E3"],
+      "candidate_space_note": "two of the four remaining branches are fully unresolved"
+    },
+    {
+      "id": "D12",
+      "type": "task_constraint",
+      "evidence": [],
+      "depends_on": ["D08", "D09", "D10", "D11"],
+      "basis": "task rules: the deliverable must be both service-compatible and satisfy the deployment requirement; the requirement is revealed only at continuation and exactly one candidate satisfies both",
+      "scope": "continuation contract",
+      "consequence": "The deliverable cannot be determined from Stage-1 knowledge: it depends on the deployment requirement, which consists of a deployment profile and a family or variant constraint revealed only at continuation time. The residual task is to apply the revealed requirement to the four remaining candidates, resolve the remaining conditionals, and submit the unique candidate that is both service-compatible and requirement-satisfying.",
+      "status": "valid, meta",
+      "affects": ["B2", "C2", "E2", "E3"],
+      "candidate_space_note": "no candidate can be singled out before the requirement is revealed"
+    },
+    {
+      "id": "D13",
+      "type": "invariant",
+      "evidence": [],
+      "depends_on": [],
+      "basis": "task rules",
+      "scope": "whole task",
+      "consequence": "The service policy is fixed throughout exploration and continuation; certificates remain authoritative within their stated scope; conditional rules resolve according to their stated terms; the service may be compatible with several candidates at once.",
+      "status": "valid, rule-based",
+      "affects": ["ALL"],
+      "candidate_space_note": "no frozen conclusion can be invalidated by later service behavior"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "V1": {
+    "answer": "E3",
+    "profile": "extended",
+    "constraint_text": "the variant number must be odd"
+  },
+  "V2": {
+    "answer": "C2",
+    "profile": "batch",
+    "constraint_text": "the family must be one of A, B, C, or D"
+  },
+  "V3": {
+    "answer": "E2",
+    "profile": "batch",
+    "constraint_text": "the variant number must be even and the family must be E or F"
+  },
+  "V4": {
+    "answer": "C2",
+    "profile": "extended",
+    "constraint_text": "the variant number must be even and the family must be C or D"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "e1": "V2",
+  "e2": "V2",
+  "p1": "V2",
+  "p2": "V2",
+  "s1": "V2",
+  "s2": "V2",
+  "order": [
+    "p1",
+    "e1",
+    "s1",
+    "e2",
+    "p2",
+    "s2"
+  ],
+  "note": "Reveal V2 selected after Gate 3 by a documented diagnostic criterion (answer must be the deduced-conditional candidate with residual probe uncertainty); identical reveal for all conditions. Launch order interleaves conditions with each condition once in each half."
+}

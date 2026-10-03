@@ -1,0 +1,6 @@
+p1 tokens=46373 tool_uses=5 duration_ms=145461
+e1 tokens=41246 tool_uses=5 duration_ms=29423
+s1 tokens=46236 tool_uses=5 duration_ms=28435
+e2 tokens=41630 tool_uses=5 duration_ms=31999
+p2 tokens=44211 tool_uses=5 duration_ms=42789
+s2 tokens=49494 tool_uses=5 duration_ms=57659

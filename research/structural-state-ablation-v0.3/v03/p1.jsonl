@@ -1,0 +1,2 @@
+{"step": 1, "op": "probe", "candidate": "B2", "result": {"accepted": false, "excluded": ["B2"], "certificate": "candidate B2 unavailable: incompatible with current hardware revision"}}
+{"step": 2, "op": "submit", "candidate": "C2", "result": {"correct": true, "reveal": "V2"}}
