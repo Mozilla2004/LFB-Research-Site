@@ -1,0 +1,18 @@
+{
+  "scope": "Public scoring extract only; no provider payloads, request headers, account records or remote generation identifiers. Q4 omitted. Source observations are summarized in REVIEW.md.",
+  "original_upload_sha256": "626b3e4092091d2abe54e40e01318c5c1f99760bad501fbd243dabfc8a05cafe",
+  "files": {
+    "data/action_semantics.jsonl": "8cddaefa60c48848ba351c880edb865bb2fe33b334ea8b740400d68a81acec69",
+    "data/answers.jsonl": "5b29183115378d5cef31cfb4297250ddeb11ec83e54ea0a7933e9c6b76512399",
+    "data/cases.json": "09a97197da3c67c2cbd72874a9840d94b59c4f30ce8978e2eec3191688307cb1",
+    "data/experiences.json": "f64335b70b4047a6b1cb6750401b70f434a5ce7489b1f09e89bda896a750baab",
+    "data/oracle.json": "12e61a74661fc098462a21d202ee2b8a8effdf7bf3daea6232535e29296df38e",
+    "data/renderings.json": "c1491e8fbb9bdbd9f3443b3803ce5f9ccb17a9499a1524acd5ba1be56fa3b000",
+    "source/EXPERIMENT_DESIGN.md": "55cc9393734dac3625d89e464ad22bbc3e726ce0eb3a469eca61949942c41f5c",
+    "source/INVALID_CASES.csv": "305e5d22be32de932ecc92b9024477d7c4768a5ada7d31edbaa643bfb8900723",
+    "source/PREREGISTRATION.md": "409594058d69c6b6f789ed40e3be64eae8c8e161bd5630c1298a04102893c3ce",
+    "source/action_space.py": "48a1c0d0f50abe0e16896ccad2001529a8478a63946d6c7dd3c4cc48f8d7229e",
+    "source/aggregate.py": "292485814ab092640c1cad6c1f9149fa4ed5514477b1bb9fc89aefcaf81f37ba",
+    "source/common.py": "843ae5396087d101fa1053abfb9782cbd6f013daf17f370fca97fde32df65866"
+  }
+}

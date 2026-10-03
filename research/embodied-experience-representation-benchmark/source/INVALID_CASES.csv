@@ -1,0 +1,2 @@
+case_id,discovered_at,reason,recorded_by
+F11_T5,2026-10-02T15:26:42.797614+00:00,"Option C: inherited NO transfer label is not independently unique because source along-guide correction can encompass local curved-guide following. Q2 candidates repaired, but source/transfer semantics are frozen, so this case remains explicitly invalid.",v0.1.2_pre_model_action_space_review

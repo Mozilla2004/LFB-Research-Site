@@ -1,0 +1,2442 @@
+[
+  {
+    "object_id": "F01_E00",
+    "object_kind": "source",
+    "experience_id": "F01_E00",
+    "family_id": "F01",
+    "family_name": "高杯侧抓",
+    "task": {
+      "goal": "pick up a tall cup"
+    },
+    "environment": {
+      "object_type": "a tall tumbler",
+      "object_properties": {
+        "applicability_condition": "a rigid upright object with a lower-middle center of mass"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "grasp_height": "upper"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "cup tilts and contact is lost"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set grasp_height to lower-middle"
+    },
+    "attempt_2": {
+      "action": {
+        "grasp_height": "lower-middle"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "cup tilts and contact is lost",
+      "changed_variable": "grasp_height",
+      "change_direction": "upper -> lower-middle",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a rigid upright object with a lower-middle center of mass"
+      ],
+      "negative_conditions": [
+        "a fragile lower section must not be grasped"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to pick up a tall cup."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a rigid upright object with a lower-middle center of mass."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used grasp height set to upper."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: cup tilts and contact is lost."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting grasp height to lower-middle."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used grasp height set to lower-middle; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: stable contact before lift."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was grasp height."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was cup tilts and contact is lost."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from upper to lower-middle."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a rigid upright object with a lower-middle center of mass."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: a fragile lower section must not be grasped."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "stable contact before lift",
+      "boundary_alternative": "grasp the reinforced upper handle",
+      "boundary_variable": "contact_point"
+    },
+    "transfer_variants": [
+      "a tall tumbler",
+      "a tall reusable cup",
+      "a rigid narrow vase",
+      "a vertical inspection mast"
+    ],
+    "boundary_scenario": "the cup has a reinforced handle above a fragile lower section"
+  },
+  {
+    "object_id": "F02_E00",
+    "object_kind": "source",
+    "experience_id": "F02_E00",
+    "family_id": "F02",
+    "family_name": "扁盒抓取",
+    "task": {
+      "goal": "lift a flat box"
+    },
+    "environment": {
+      "object_type": "a flat carton",
+      "object_properties": {
+        "applicability_condition": "two reachable rigid supporting edges"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "grasp_width": "narrow"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "fingers miss the two supporting edges"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set grasp_width to match both box edges"
+    },
+    "attempt_2": {
+      "action": {
+        "grasp_width": "match both box edges"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "fingers miss the two supporting edges",
+      "changed_variable": "grasp_width",
+      "change_direction": "narrow -> match both box edges",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "two reachable rigid supporting edges"
+      ],
+      "negative_conditions": [
+        "the edges collapse under finger load"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to lift a flat box."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: two reachable rigid supporting edges."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used grasp width set to narrow."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: fingers miss the two supporting edges."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting grasp width to match both box edges."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used grasp width set to match both box edges; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: both supporting edges are engaged."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was grasp width."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was fingers miss the two supporting edges."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from narrow to match both box edges."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: two reachable rigid supporting edges."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the edges collapse under finger load."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "both supporting edges are engaged",
+      "boundary_alternative": "support the box from underneath",
+      "boundary_variable": "support_mode"
+    },
+    "transfer_variants": [
+      "a flat carton",
+      "a shallow rigid case",
+      "a wide equipment enclosure",
+      "a thin rigid solar panel"
+    ],
+    "boundary_scenario": "the flat box has collapsible edges"
+  },
+  {
+    "object_id": "F03_E00",
+    "object_kind": "source",
+    "experience_id": "F03_E00",
+    "family_id": "F03",
+    "family_name": "光滑瓶体",
+    "task": {
+      "goal": "lift a smooth bottle"
+    },
+    "environment": {
+      "object_type": "a smooth flask",
+      "object_properties": {
+        "applicability_condition": "a rigid smooth surface that tolerates moderate pressure"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "grip_force": "low"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "bottle slips before lift"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set grip_force to moderate"
+    },
+    "attempt_2": {
+      "action": {
+        "grip_force": "moderate"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "bottle slips before lift",
+      "changed_variable": "grip_force",
+      "change_direction": "low -> moderate",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a rigid smooth surface that tolerates moderate pressure"
+      ],
+      "negative_conditions": [
+        "the shell cracks under moderate pressure"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to lift a smooth bottle."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a rigid smooth surface that tolerates moderate pressure."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used grip force set to low."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: bottle slips before lift."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting grip force to moderate."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used grip force set to moderate; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: no slip without deformation."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was grip force."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was bottle slips before lift."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from low to moderate."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a rigid smooth surface that tolerates moderate pressure."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the shell cracks under moderate pressure."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "no slip without deformation",
+      "boundary_alternative": "use a padded cradle at low pressure",
+      "boundary_variable": "support_mode"
+    },
+    "transfer_variants": [
+      "a smooth flask",
+      "a smooth canister",
+      "a rigid polished cylinder",
+      "a polished instrument housing"
+    ],
+    "boundary_scenario": "the smooth bottle has a brittle shell"
+  },
+  {
+    "object_id": "F04_E00",
+    "object_kind": "source",
+    "experience_id": "F04_E00",
+    "family_id": "F04",
+    "family_name": "易碎物体",
+    "task": {
+      "goal": "lift a fragile ornament"
+    },
+    "environment": {
+      "object_type": "a hollow ornament",
+      "object_properties": {
+        "applicability_condition": "a light fragile object that can be held with low pressure"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "grip_force": "high"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "shell deforms during grasp"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set grip_force to low"
+    },
+    "attempt_2": {
+      "action": {
+        "grip_force": "low"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "shell deforms during grasp",
+      "changed_variable": "grip_force",
+      "change_direction": "high -> low",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a light fragile object that can be held with low pressure"
+      ],
+      "negative_conditions": [
+        "low pressure cannot retain a heavy slippery load"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to lift a fragile ornament."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a light fragile object that can be held with low pressure."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used grip force set to high."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: shell deforms during grasp."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting grip force to low."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used grip force set to low; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: hold without deformation."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was grip force."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was shell deforms during grasp."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from high to low."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a light fragile object that can be held with low pressure."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: low pressure cannot retain a heavy slippery load."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "hold without deformation",
+      "boundary_alternative": "support the heavy load with a cradle",
+      "boundary_variable": "support_mode"
+    },
+    "transfer_variants": [
+      "a hollow ornament",
+      "a fragile shell",
+      "a thin glass shade",
+      "a delicate calibration housing"
+    ],
+    "boundary_scenario": "the target is heavy and slips at low pressure"
+  },
+  {
+    "object_id": "F05_E00",
+    "object_kind": "source",
+    "experience_id": "F05_E00",
+    "family_id": "F05",
+    "family_name": "桌边物体",
+    "task": {
+      "goal": "retrieve an object at a table edge"
+    },
+    "environment": {
+      "object_type": "an edge cup",
+      "object_properties": {
+        "applicability_condition": "an inward approach route is clear"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "approach_angle": "outward lateral"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "contact pushes the object toward the drop edge"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set approach_angle to inward from safe side"
+    },
+    "attempt_2": {
+      "action": {
+        "approach_angle": "inward from safe side"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "contact pushes the object toward the drop edge",
+      "changed_variable": "approach_angle",
+      "change_direction": "outward lateral -> inward from safe side",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "an inward approach route is clear"
+      ],
+      "negative_conditions": [
+        "the inward route is blocked by a fixed wall"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to retrieve an object at a table edge."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: an inward approach route is clear."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used approach angle set to outward lateral."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: contact pushes the object toward the drop edge."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting approach angle to inward from safe side."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used approach angle set to inward from safe side; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: contact keeps object inside support area."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was approach angle."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was contact pushes the object toward the drop edge."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from outward lateral to inward from safe side."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: an inward approach route is clear."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the inward route is blocked by a fixed wall."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "contact keeps object inside support area",
+      "boundary_alternative": "stabilize from above using the clear route",
+      "boundary_variable": "approach_route"
+    },
+    "transfer_variants": [
+      "an edge cup",
+      "an edge box",
+      "a part beside a shelf lip",
+      "a component beside a platform edge"
+    ],
+    "boundary_scenario": "a fixed wall blocks the inward route"
+  },
+  {
+    "object_id": "F06_E00",
+    "object_kind": "source",
+    "experience_id": "F06_E00",
+    "family_id": "F06",
+    "family_name": "遮挡抓取",
+    "task": {
+      "goal": "grasp an occluded part"
+    },
+    "environment": {
+      "object_type": "an occluded knob",
+      "object_properties": {
+        "applicability_condition": "moving to the side reveals the target"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "viewpoint": "occluded front"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "grasp targets an incorrectly localized edge"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set viewpoint to clear side"
+    },
+    "attempt_2": {
+      "action": {
+        "viewpoint": "clear side"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "grasp targets an incorrectly localized edge",
+      "changed_variable": "viewpoint",
+      "change_direction": "occluded front -> clear side",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "moving to the side reveals the target"
+      ],
+      "negative_conditions": [
+        "all side views remain opaque"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to grasp an occluded part."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: moving to the side reveals the target."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used viewpoint set to occluded front."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: grasp targets an incorrectly localized edge."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting viewpoint to clear side."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used viewpoint set to clear side; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: target edge is visible before grasp."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was viewpoint."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was grasp targets an incorrectly localized edge."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from occluded front to clear side."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: moving to the side reveals the target."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: all side views remain opaque."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "target edge is visible before grasp",
+      "boundary_alternative": "use the available overhead view",
+      "boundary_variable": "viewpoint"
+    },
+    "transfer_variants": [
+      "an occluded knob",
+      "an occluded block",
+      "a part behind a rack",
+      "an inspection mark behind a housing"
+    ],
+    "boundary_scenario": "opaque side screens leave only an overhead view clear"
+  },
+  {
+    "object_id": "F07_E00",
+    "object_kind": "source",
+    "experience_id": "F07_E00",
+    "family_id": "F07",
+    "family_name": "深容器取物",
+    "task": {
+      "goal": "retrieve a part from a deep bin"
+    },
+    "environment": {
+      "object_type": "a deep bin part",
+      "object_properties": {
+        "applicability_condition": "the deeper path is clear and the target is below the shallow reach"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "insertion_depth": "shallow"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "gripper closes above the target"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set insertion_depth to reach target depth"
+    },
+    "attempt_2": {
+      "action": {
+        "insertion_depth": "reach target depth"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "gripper closes above the target",
+      "changed_variable": "insertion_depth",
+      "change_direction": "shallow -> reach target depth",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "the deeper path is clear and the target is below the shallow reach"
+      ],
+      "negative_conditions": [
+        "a hard stop blocks deeper insertion"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to retrieve a part from a deep bin."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: the deeper path is clear and the target is below the shallow reach."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used insertion depth set to shallow."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: gripper closes above the target."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting insertion depth to reach target depth."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used insertion depth set to reach target depth; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: contact is made at target depth."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was insertion depth."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was gripper closes above the target."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from shallow to reach target depth."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: the deeper path is clear and the target is below the shallow reach."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: a hard stop blocks deeper insertion."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "contact is made at target depth",
+      "boundary_alternative": "remove the blocking insert first",
+      "boundary_variable": "subgoal_order"
+    },
+    "transfer_variants": [
+      "a deep bin part",
+      "a deep basket part",
+      "a part in a vertical well",
+      "a probe target in a recessed port"
+    ],
+    "boundary_scenario": "a hard insert blocks the path above the target"
+  },
+  {
+    "object_id": "F08_E00",
+    "object_kind": "source",
+    "experience_id": "F08_E00",
+    "family_id": "F08",
+    "family_name": "狭窄空间",
+    "task": {
+      "goal": "move a part through a narrow gap"
+    },
+    "environment": {
+      "object_type": "a narrow slot part",
+      "object_properties": {
+        "applicability_condition": "a compact centered path fits the object"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "trajectory_clearance": "wide lateral sweep"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "swept path hits the side wall"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set trajectory_clearance to centered compact path"
+    },
+    "attempt_2": {
+      "action": {
+        "trajectory_clearance": "centered compact path"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "swept path hits the side wall",
+      "changed_variable": "trajectory_clearance",
+      "change_direction": "wide lateral sweep -> centered compact path",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a compact centered path fits the object"
+      ],
+      "negative_conditions": [
+        "the object is wider than the entire opening"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to move a part through a narrow gap."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a compact centered path fits the object."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used trajectory clearance set to wide lateral sweep."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: swept path hits the side wall."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting trajectory clearance to centered compact path."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used trajectory clearance set to centered compact path; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: path clears both walls."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was trajectory clearance."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was swept path hits the side wall."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from wide lateral sweep to centered compact path."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a compact centered path fits the object."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the object is wider than the entire opening."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "path clears both walls",
+      "boundary_alternative": "use the available wider alternate opening",
+      "boundary_variable": "route"
+    },
+    "transfer_variants": [
+      "a narrow slot part",
+      "a narrow shelf part",
+      "a tray through a hatch",
+      "a sensor carrier through a service channel"
+    ],
+    "boundary_scenario": "the target is wider than the opening but an alternate opening exists"
+  },
+  {
+    "object_id": "F09_E00",
+    "object_kind": "source",
+    "experience_id": "F09_E00",
+    "family_id": "F09",
+    "family_name": "长物体搬运",
+    "task": {
+      "goal": "carry a long rod through a doorway"
+    },
+    "environment": {
+      "object_type": "a long stick",
+      "object_properties": {
+        "applicability_condition": "the long axis can fit when aligned"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "orientation": "crosswise"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "rod ends collide with doorway"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set orientation to aligned with opening"
+    },
+    "attempt_2": {
+      "action": {
+        "orientation": "aligned with opening"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "rod ends collide with doorway",
+      "changed_variable": "orientation",
+      "change_direction": "crosswise -> aligned with opening",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "the long axis can fit when aligned"
+      ],
+      "negative_conditions": [
+        "alignment still exceeds the opening dimensions"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to carry a long rod through a doorway."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: the long axis can fit when aligned."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used orientation set to crosswise."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: rod ends collide with doorway."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting orientation to aligned with opening."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used orientation set to aligned with opening; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: rod ends clear doorway."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was orientation."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was rod ends collide with doorway."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from crosswise to aligned with opening."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: the long axis can fit when aligned."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: alignment still exceeds the opening dimensions."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "rod ends clear doorway",
+      "boundary_alternative": "use the larger alternate doorway",
+      "boundary_variable": "route"
+    },
+    "transfer_variants": [
+      "a long stick",
+      "a long bar",
+      "a long beam",
+      "a long antenna assembly"
+    ],
+    "boundary_scenario": "the rod remains too wide even after alignment"
+  },
+  {
+    "object_id": "F10_E00",
+    "object_kind": "source",
+    "experience_id": "F10_E00",
+    "family_id": "F10",
+    "family_name": "滑动物体",
+    "task": {
+      "goal": "contact a freely sliding object"
+    },
+    "environment": {
+      "object_type": "a sliding puck",
+      "object_properties": {
+        "applicability_condition": "slow contact avoids displacement on a free surface"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "contact_speed": "fast"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "initial impact displaces the target"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set contact_speed to slow"
+    },
+    "attempt_2": {
+      "action": {
+        "contact_speed": "slow"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "initial impact displaces the target",
+      "changed_variable": "contact_speed",
+      "change_direction": "fast -> slow",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "slow contact avoids displacement on a free surface"
+      ],
+      "negative_conditions": [
+        "a latch requires a short fast impulse"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to contact a freely sliding object."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: slow contact avoids displacement on a free surface."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used contact speed set to fast."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: initial impact displaces the target."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting contact speed to slow."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used contact speed set to slow; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: contact retains target location."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was contact speed."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was initial impact displaces the target."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from fast to slow."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: slow contact avoids displacement on a free surface."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: a latch requires a short fast impulse."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "contact retains target location",
+      "boundary_alternative": "apply the required controlled impulse",
+      "boundary_variable": "contact_speed"
+    },
+    "transfer_variants": [
+      "a sliding puck",
+      "a sliding tray",
+      "a loose tile",
+      "a movable calibration sled"
+    ],
+    "boundary_scenario": "the target is latched and requires a short impulse"
+  },
+  {
+    "object_id": "F11_E00",
+    "object_kind": "source",
+    "experience_id": "F11_E00",
+    "family_id": "F11",
+    "family_name": "推动物体",
+    "task": {
+      "goal": "push a guided block to its goal"
+    },
+    "environment": {
+      "object_type": "a guided cube",
+      "object_properties": {
+        "applicability_condition": "a straight guide constrains motion toward the goal"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "force_direction": "across guide"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "block jams against guide"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set force_direction to along guide toward goal"
+    },
+    "attempt_2": {
+      "action": {
+        "force_direction": "along guide toward goal"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "block jams against guide",
+      "changed_variable": "force_direction",
+      "change_direction": "across guide -> along guide toward goal",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a straight guide constrains motion toward the goal"
+      ],
+      "negative_conditions": [
+        "the guide curves before the goal"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to push a guided block to its goal."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a straight guide constrains motion toward the goal."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used force direction set to across guide."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: block jams against guide."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting force direction to along guide toward goal."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used force direction set to along guide toward goal; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: motion follows guide to goal."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was force direction."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was block jams against guide."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from across guide to along guide toward goal."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a straight guide constrains motion toward the goal."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the guide curves before the goal."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "motion follows guide to goal",
+      "boundary_alternative": "follow the curved guide direction locally",
+      "boundary_variable": "force_direction"
+    },
+    "transfer_variants": [
+      "a guided cube",
+      "a guided parcel",
+      "a wheeled cart on a rail",
+      "a payload carrier in a guide"
+    ],
+    "boundary_scenario": "the guide curves and a fixed straight push jams"
+  },
+  {
+    "object_id": "F12_E00",
+    "object_kind": "source",
+    "experience_id": "F12_E00",
+    "family_id": "F12",
+    "family_name": "放置不稳",
+    "task": {
+      "goal": "place a part on a support"
+    },
+    "environment": {
+      "object_type": "a rocking block",
+      "object_properties": {
+        "applicability_condition": "a flat stable face matches a level support"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "placement_pose": "tilted"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "part rocks after release"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set placement_pose to flat stable face"
+    },
+    "attempt_2": {
+      "action": {
+        "placement_pose": "flat stable face"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "part rocks after release",
+      "changed_variable": "placement_pose",
+      "change_direction": "tilted -> flat stable face",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a flat stable face matches a level support"
+      ],
+      "negative_conditions": [
+        "the support is a shaped socket requiring a tilted pose"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to place a part on a support."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a flat stable face matches a level support."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used placement pose set to tilted."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: part rocks after release."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting placement pose to flat stable face."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used placement pose set to flat stable face; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: part rests without rocking."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was placement pose."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was part rocks after release."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from tilted to flat stable face."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a flat stable face matches a level support."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the support is a shaped socket requiring a tilted pose."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "part rests without rocking",
+      "boundary_alternative": "match the specified tilted socket pose",
+      "boundary_variable": "placement_pose"
+    },
+    "transfer_variants": [
+      "a rocking block",
+      "a rocking container",
+      "a module on a base",
+      "a ballast unit on a mount"
+    ],
+    "boundary_scenario": "a shaped socket requires a specified tilted pose"
+  },
+  {
+    "object_id": "F13_E00",
+    "object_kind": "source",
+    "experience_id": "F13_E00",
+    "family_id": "F13",
+    "family_name": "堆叠失败",
+    "task": {
+      "goal": "stack a block on another block"
+    },
+    "environment": {
+      "object_type": "a stacking cube",
+      "object_properties": {
+        "applicability_condition": "a centered footprint is supported by the base"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "alignment": "offset"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "upper block tips after release"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set alignment to centered"
+    },
+    "attempt_2": {
+      "action": {
+        "alignment": "centered"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "upper block tips after release",
+      "changed_variable": "alignment",
+      "change_direction": "offset -> centered",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a centered footprint is supported by the base"
+      ],
+      "negative_conditions": [
+        "the base center is a hole and an offset ledge is the support"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to stack a block on another block."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a centered footprint is supported by the base."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used alignment set to offset."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: upper block tips after release."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting alignment to centered."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used alignment set to centered; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: upper support footprint lies inside base."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was alignment."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was upper block tips after release."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from offset to centered."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a centered footprint is supported by the base."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the base center is a hole and an offset ledge is the support."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "upper support footprint lies inside base",
+      "boundary_alternative": "align with the supported offset ledge",
+      "boundary_variable": "alignment"
+    },
+    "transfer_variants": [
+      "a stacking cube",
+      "a stacking case",
+      "a storage module stack",
+      "a layered structural spacer"
+    ],
+    "boundary_scenario": "the base center is a hole with a supported offset ledge"
+  },
+  {
+    "object_id": "F14_E00",
+    "object_kind": "source",
+    "experience_id": "F14_E00",
+    "family_id": "F14",
+    "family_name": "插入失败",
+    "task": {
+      "goal": "insert a peg into a socket"
+    },
+    "environment": {
+      "object_type": "a straight peg",
+      "object_properties": {
+        "applicability_condition": "a straight bore requires coaxial entry"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "insertion_angle": "tilted"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "peg catches on socket rim"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set insertion_angle to coaxial"
+    },
+    "attempt_2": {
+      "action": {
+        "insertion_angle": "coaxial"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "peg catches on socket rim",
+      "changed_variable": "insertion_angle",
+      "change_direction": "tilted -> coaxial",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a straight bore requires coaxial entry"
+      ],
+      "negative_conditions": [
+        "a keyed angled entry is required"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to insert a peg into a socket."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a straight bore requires coaxial entry."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used insertion angle set to tilted."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: peg catches on socket rim."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting insertion angle to coaxial."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used insertion angle set to coaxial; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: peg enters without rim collision."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was insertion angle."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was peg catches on socket rim."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from tilted to coaxial."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a straight bore requires coaxial entry."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: a keyed angled entry is required."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "peg enters without rim collision",
+      "boundary_alternative": "match the specified keyed entry angle",
+      "boundary_variable": "insertion_angle"
+    },
+    "transfer_variants": [
+      "a straight peg",
+      "a straight pin",
+      "a connector into a straight port",
+      "a tool shank into a guide bore"
+    ],
+    "boundary_scenario": "the port has a keyed angled entry"
+  },
+  {
+    "object_id": "F15_E00",
+    "object_kind": "source",
+    "experience_id": "F15_E00",
+    "family_id": "F15",
+    "family_name": "拉门失败",
+    "task": {
+      "goal": "open a hinged door"
+    },
+    "environment": {
+      "object_type": "a hinged panel",
+      "object_properties": {
+        "applicability_condition": "an unlatched hinged door permits rotation"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "force_direction": "toward hinge"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "door does not rotate"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set force_direction to tangent away from hinge"
+    },
+    "attempt_2": {
+      "action": {
+        "force_direction": "tangent away from hinge"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "door does not rotate",
+      "changed_variable": "force_direction",
+      "change_direction": "toward hinge -> tangent away from hinge",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "an unlatched hinged door permits rotation"
+      ],
+      "negative_conditions": [
+        "a latch prevents rotation until released"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to open a hinged door."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: an unlatched hinged door permits rotation."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used force direction set to toward hinge."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: door does not rotate."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting force direction to tangent away from hinge."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used force direction set to tangent away from hinge; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: door rotates about hinge."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was force direction."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was door does not rotate."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from toward hinge to tangent away from hinge."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: an unlatched hinged door permits rotation."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: a latch prevents rotation until released."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "door rotates about hinge",
+      "boundary_alternative": "release the latch first",
+      "boundary_variable": "subgoal_order"
+    },
+    "transfer_variants": [
+      "a hinged panel",
+      "a cupboard door",
+      "an access hatch",
+      "a rotating service shield"
+    ],
+    "boundary_scenario": "the door is latched"
+  },
+  {
+    "object_id": "F16_E00",
+    "object_kind": "source",
+    "experience_id": "F16_E00",
+    "family_id": "F16",
+    "family_name": "抽屉拉取",
+    "task": {
+      "goal": "open a drawer"
+    },
+    "environment": {
+      "object_type": "a desk drawer",
+      "object_properties": {
+        "applicability_condition": "a center handle is available on symmetric rails"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "contact_point": "off-center edge"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "drawer binds during pulling"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set contact_point to center handle"
+    },
+    "attempt_2": {
+      "action": {
+        "contact_point": "center handle"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "drawer binds during pulling",
+      "changed_variable": "contact_point",
+      "change_direction": "off-center edge -> center handle",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a center handle is available on symmetric rails"
+      ],
+      "negative_conditions": [
+        "the center handle is broken and a reinforced side handle is specified"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to open a drawer."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a center handle is available on symmetric rails."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used contact point set to off-center edge."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: drawer binds during pulling."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting contact point to center handle."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used contact point set to center handle; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: drawer translates without binding."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was contact point."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was drawer binds during pulling."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from off-center edge to center handle."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a center handle is available on symmetric rails."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: the center handle is broken and a reinforced side handle is specified."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "drawer translates without binding",
+      "boundary_alternative": "use the specified reinforced side handle",
+      "boundary_variable": "contact_point"
+    },
+    "transfer_variants": [
+      "a desk drawer",
+      "a cabinet drawer",
+      "a sliding bin",
+      "a rail-mounted instrument tray"
+    ],
+    "boundary_scenario": "the center handle is broken with a reinforced side handle available"
+  },
+  {
+    "object_id": "F17_E00",
+    "object_kind": "source",
+    "experience_id": "F17_E00",
+    "family_id": "F17",
+    "family_name": "软物体抓取",
+    "task": {
+      "goal": "lift a soft bag"
+    },
+    "environment": {
+      "object_type": "a soft pouch",
+      "object_properties": {
+        "applicability_condition": "a deformable load permits distributed support"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "grasp_distribution": "single pinch"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "bag folds and contents spill"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set grasp_distribution to distributed support"
+    },
+    "attempt_2": {
+      "action": {
+        "grasp_distribution": "distributed support"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "bag folds and contents spill",
+      "changed_variable": "grasp_distribution",
+      "change_direction": "single pinch -> distributed support",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "a deformable load permits distributed support"
+      ],
+      "negative_conditions": [
+        "distributed grasp would press a marked sensitive zone"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to lift a soft bag."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: a deformable load permits distributed support."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used grasp distribution set to single pinch."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: bag folds and contents spill."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting grasp distribution to distributed support."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used grasp distribution set to distributed support; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: contents remain supported during lift."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was grasp distribution."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was bag folds and contents spill."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from single pinch to distributed support."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: a deformable load permits distributed support."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: distributed grasp would press a marked sensitive zone."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "contents remain supported during lift",
+      "boundary_alternative": "lift only from the designated rigid loop",
+      "boundary_variable": "contact_point"
+    },
+    "transfer_variants": [
+      "a soft pouch",
+      "a soft bag",
+      "a flexible fabric bundle",
+      "a flexible sample carrier"
+    ],
+    "boundary_scenario": "a marked sensitive zone forbids distributed pressure"
+  },
+  {
+    "object_id": "F18_E00",
+    "object_kind": "source",
+    "experience_id": "F18_E00",
+    "family_id": "F18",
+    "family_name": "双臂协作",
+    "task": {
+      "goal": "lift a load with two arms"
+    },
+    "environment": {
+      "object_type": "a two-arm box",
+      "object_properties": {
+        "applicability_condition": "both supports are ready before simultaneous lift"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "action_timing": "one arm early"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "load twists during lift"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set action_timing to synchronized lift"
+    },
+    "attempt_2": {
+      "action": {
+        "action_timing": "synchronized lift"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "load twists during lift",
+      "changed_variable": "action_timing",
+      "change_direction": "one arm early -> synchronized lift",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "both supports are ready before simultaneous lift"
+      ],
+      "negative_conditions": [
+        "one support cannot start until a safety lock is released"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to lift a load with two arms."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: both supports are ready before simultaneous lift."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used action timing set to one arm early."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: load twists during lift."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting action timing to synchronized lift."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used action timing set to synchronized lift; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: both sides rise together."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was action timing."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was load twists during lift."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from one arm early to synchronized lift."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: both supports are ready before simultaneous lift."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: one support cannot start until a safety lock is released."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "both sides rise together",
+      "boundary_alternative": "release the safety lock before synchronized lifting",
+      "boundary_variable": "subgoal_order"
+    },
+    "transfer_variants": [
+      "a two-arm box",
+      "a two-arm tray",
+      "a two-support panel",
+      "a two-actuator platform"
+    ],
+    "boundary_scenario": "one support is blocked by a safety lock"
+  },
+  {
+    "object_id": "F19_E00",
+    "object_kind": "source",
+    "experience_id": "F19_E00",
+    "family_id": "F19",
+    "family_name": "操作顺序错误",
+    "task": {
+      "goal": "place a part in a lidded container"
+    },
+    "environment": {
+      "object_type": "a lidded box",
+      "object_properties": {
+        "applicability_condition": "opening the lid is permitted before insertion"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "subgoal_order": "insert before opening lid"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "part collides with closed lid"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set subgoal_order to open lid then insert"
+    },
+    "attempt_2": {
+      "action": {
+        "subgoal_order": "open lid then insert"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "part collides with closed lid",
+      "changed_variable": "subgoal_order",
+      "change_direction": "insert before opening lid -> open lid then insert",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "opening the lid is permitted before insertion"
+      ],
+      "negative_conditions": [
+        "opening is forbidden until pressure is equalized"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to place a part in a lidded container."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: opening the lid is permitted before insertion."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used subgoal order set to insert before opening lid."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: part collides with closed lid."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting subgoal order to open lid then insert."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used subgoal order set to open lid then insert; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: part enters the opened container."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was subgoal order."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was part collides with closed lid."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from insert before opening lid to open lid then insert."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: opening the lid is permitted before insertion."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: opening is forbidden until pressure is equalized."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "part enters the opened container",
+      "boundary_alternative": "equalize pressure then open and insert",
+      "boundary_variable": "subgoal_order"
+    },
+    "transfer_variants": [
+      "a lidded box",
+      "a lidded bin",
+      "a covered loading bay",
+      "a sealed service chamber"
+    ],
+    "boundary_scenario": "pressure must be equalized before opening"
+  },
+  {
+    "object_id": "F20_E00",
+    "object_kind": "source",
+    "experience_id": "F20_E00",
+    "family_id": "F20",
+    "family_name": "用户偏好修正",
+    "task": {
+      "goal": "place a user item in a preferred location"
+    },
+    "environment": {
+      "object_type": "the same user mug",
+      "object_properties": {
+        "applicability_condition": "the same user has an active confirmed right preference"
+      }
+    },
+    "attempt_1": {
+      "action": {
+        "preference_state": "default left"
+      },
+      "outcome": "failure",
+      "failure_observation": [
+        "user rejects default placement"
+      ]
+    },
+    "human_correction": {
+      "instruction": "Set preference_state to confirmed user right"
+    },
+    "attempt_2": {
+      "action": {
+        "preference_state": "confirmed user right"
+      },
+      "outcome": "success"
+    },
+    "canonical_experience": {
+      "failure_state": "user rejects default placement",
+      "changed_variable": "preference_state",
+      "change_direction": "default left -> confirmed user right",
+      "result_after_change": "success"
+    },
+    "applicability": {
+      "positive_conditions": [
+        "the same user has an active confirmed right preference"
+      ],
+      "negative_conditions": [
+        "a new user explicitly prefers left"
+      ]
+    },
+    "facts": [
+      {
+        "id": "goal",
+        "section": "Goal",
+        "text": "The goal was to place a user item in a preferred location."
+      },
+      {
+        "id": "pre",
+        "section": "Pre-State",
+        "text": "The source setting satisfied this condition: the same user has an active confirmed right preference."
+      },
+      {
+        "id": "a1",
+        "section": "Pre-State",
+        "text": "The first action used preference state set to default left."
+      },
+      {
+        "id": "obs",
+        "section": "Failure-State",
+        "text": "The observed failure was: user rejects default placement."
+      },
+      {
+        "id": "correction",
+        "section": "Correction",
+        "text": "A human instructed setting preference state to confirmed user right."
+      },
+      {
+        "id": "a2",
+        "section": "State Change",
+        "text": "The revised action used preference state set to confirmed user right; other action settings were held fixed."
+      },
+      {
+        "id": "outcome",
+        "section": "Outcome",
+        "text": "The revised attempt succeeded: placement matches confirmed preference."
+      },
+      {
+        "id": "variable",
+        "section": "Relevant Variable",
+        "text": "The changed variable was preference state."
+      },
+      {
+        "id": "failure_state",
+        "section": "Failure-State",
+        "text": "The recorded failure state was user rejects default placement."
+      },
+      {
+        "id": "change",
+        "section": "State Change",
+        "text": "The recorded change was from default left to confirmed user right."
+      },
+      {
+        "id": "positive",
+        "section": "Applicability Boundary",
+        "text": "The recorded applicability condition was: the same user has an active confirmed right preference."
+      },
+      {
+        "id": "negative",
+        "section": "Applicability Boundary",
+        "text": "The recorded exclusion condition was: a new user explicitly prefers left."
+      }
+    ],
+    "synthetic_rule": {
+      "success_condition": "placement matches confirmed preference",
+      "boundary_alternative": "use the new user confirmed left preference",
+      "boundary_variable": "preference_state"
+    },
+    "transfer_variants": [
+      "the same user mug",
+      "the same user book",
+      "the same user workspace tool",
+      "the same user virtual control panel"
+    ],
+    "boundary_scenario": "a new user explicitly requests left placement"
+  }
+]

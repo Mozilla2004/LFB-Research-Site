@@ -1,0 +1,4361 @@
+[
+  {
+    "object_id": "F01_T1",
+    "object_kind": "evaluation",
+    "case_id": "F01_T1",
+    "family_id": "F01",
+    "source_experience_id": "F01_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a tall tumbler. Current condition: a rigid upright object with a lower-middle center of mass.",
+    "goal": "pick up a tall cup",
+    "failure_observation": "cup tilts and contact is lost",
+    "current_failed_action": {
+      "grasp_height": "upper"
+    },
+    "action_options": {
+      "A": "Grasp the base below the body.",
+      "B": "Grasp the rim.",
+      "C": "Grasp the upper body.",
+      "D": "Grasp the lower-middle body band."
+    },
+    "diagnosis_options": [
+      "grasp_height",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+    "action_constraints": {
+      "facts": "The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+      "effect_fields": [
+        "grasp_region"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.grasp_region",
+          "op": "eq",
+          "value": "lower_middle_body"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F01_T2",
+    "object_kind": "evaluation",
+    "case_id": "F01_T2",
+    "family_id": "F01",
+    "source_experience_id": "F01_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a tall reusable cup. Current condition: a rigid upright object with a lower-middle center of mass.",
+    "goal": "pick up a tall cup",
+    "failure_observation": "cup tilts and contact is lost",
+    "current_failed_action": {
+      "grasp_height": "upper"
+    },
+    "action_options": {
+      "A": "Grasp the rim.",
+      "B": "Grasp the base below the body.",
+      "C": "Grasp the upper body.",
+      "D": "Grasp the lower-middle body band."
+    },
+    "diagnosis_options": [
+      "grasp_height",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+    "action_constraints": {
+      "facts": "The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+      "effect_fields": [
+        "grasp_region"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.grasp_region",
+          "op": "eq",
+          "value": "lower_middle_body"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F01_T3",
+    "object_kind": "evaluation",
+    "case_id": "F01_T3",
+    "family_id": "F01",
+    "source_experience_id": "F01_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a rigid narrow vase. Current condition: a rigid upright object with a lower-middle center of mass.",
+    "goal": "pick up a tall cup",
+    "failure_observation": "cup tilts and contact is lost",
+    "current_failed_action": {
+      "grasp_height": "upper"
+    },
+    "action_options": {
+      "A": "Grasp the upper body.",
+      "B": "Grasp the lower-middle body band.",
+      "C": "Grasp the rim.",
+      "D": "Grasp the base below the body."
+    },
+    "diagnosis_options": [
+      "grasp_height",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+    "action_constraints": {
+      "facts": "The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+      "effect_fields": [
+        "grasp_region"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.grasp_region",
+          "op": "eq",
+          "value": "lower_middle_body"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F01_T4",
+    "object_kind": "evaluation",
+    "case_id": "F01_T4",
+    "family_id": "F01",
+    "source_experience_id": "F01_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a vertical inspection mast. Current condition: a rigid upright object with a lower-middle center of mass.",
+    "goal": "stabilize and relocate an inspection mast",
+    "failure_observation": "cup tilts and contact is lost",
+    "current_failed_action": {
+      "grasp_height": "upper"
+    },
+    "action_options": {
+      "A": "Grasp the upper body.",
+      "B": "Grasp the base below the body.",
+      "C": "Grasp the rim.",
+      "D": "Grasp the lower-middle body band."
+    },
+    "diagnosis_options": [
+      "grasp_height",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+    "action_constraints": {
+      "facts": "The rigid load-bearing band is lower-middle. Upper body and rim deform under contact; the base lies below the reachable contact workspace.",
+      "effect_fields": [
+        "grasp_region"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.grasp_region",
+          "op": "eq",
+          "value": "lower_middle_body"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F01_T5",
+    "object_kind": "evaluation",
+    "case_id": "F01_T5",
+    "family_id": "F01",
+    "source_experience_id": "F01_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the cup has a reinforced handle above a fragile lower section. Current condition: a fragile lower section must not be grasped.",
+    "goal": "pick up a tall cup",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "grasp_height": "upper"
+    },
+    "action_options": {
+      "A": "Copy the prior lower-middle body grasp.",
+      "B": "Grasp the separate reinforced upper handle.",
+      "C": "Grasp the fragile base.",
+      "D": "Grasp the upper body wall, excluding the handle."
+    },
+    "diagnosis_options": [
+      "grasp_height",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The lower body and base are fragile. The upper body wall is not load-bearing. A separate reinforced upper handle is load-bearing and reachable; grasping the upper body wall is not grasping that handle.",
+    "action_constraints": {
+      "facts": "The lower body and base are fragile. The upper body wall is not load-bearing. A separate reinforced upper handle is load-bearing and reachable; grasping the upper body wall is not grasping that handle.",
+      "effect_fields": [
+        "grasp_region"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.grasp_region",
+          "op": "eq",
+          "value": "reinforced_handle"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F02_T1",
+    "object_kind": "evaluation",
+    "case_id": "F02_T1",
+    "family_id": "F02",
+    "source_experience_id": "F02_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a flat carton. Current condition: two reachable rigid supporting edges.",
+    "goal": "lift a flat box",
+    "failure_observation": "fingers miss the two supporting edges",
+    "current_failed_action": {
+      "grasp_width": "narrow"
+    },
+    "action_options": {
+      "A": "Close at 1.0 times the box span to contact both edges.",
+      "B": "Close at 0.7 times the box span.",
+      "C": "Close at 1.4 times the box span.",
+      "D": "Close at 0.4 times the box span."
+    },
+    "diagnosis_options": [
+      "grasp_width",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+    "action_constraints": {
+      "facts": "The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+      "effect_fields": [
+        "jaw_span_ratio"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.jaw_span_ratio",
+          "op": "eq",
+          "value": 1.0
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F02_T2",
+    "object_kind": "evaluation",
+    "case_id": "F02_T2",
+    "family_id": "F02",
+    "source_experience_id": "F02_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a shallow rigid case. Current condition: two reachable rigid supporting edges.",
+    "goal": "lift a flat box",
+    "failure_observation": "fingers miss the two supporting edges",
+    "current_failed_action": {
+      "grasp_width": "narrow"
+    },
+    "action_options": {
+      "A": "Close at 0.7 times the box span.",
+      "B": "Close at 0.4 times the box span.",
+      "C": "Close at 1.0 times the box span to contact both edges.",
+      "D": "Close at 1.4 times the box span."
+    },
+    "diagnosis_options": [
+      "grasp_width",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+    "action_constraints": {
+      "facts": "The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+      "effect_fields": [
+        "jaw_span_ratio"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.jaw_span_ratio",
+          "op": "eq",
+          "value": 1.0
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F02_T3",
+    "object_kind": "evaluation",
+    "case_id": "F02_T3",
+    "family_id": "F02",
+    "source_experience_id": "F02_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a wide equipment enclosure. Current condition: two reachable rigid supporting edges.",
+    "goal": "lift a flat box",
+    "failure_observation": "fingers miss the two supporting edges",
+    "current_failed_action": {
+      "grasp_width": "narrow"
+    },
+    "action_options": {
+      "A": "Close at 1.4 times the box span.",
+      "B": "Close at 0.7 times the box span.",
+      "C": "Close at 0.4 times the box span.",
+      "D": "Close at 1.0 times the box span to contact both edges."
+    },
+    "diagnosis_options": [
+      "grasp_width",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+    "action_constraints": {
+      "facts": "The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+      "effect_fields": [
+        "jaw_span_ratio"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.jaw_span_ratio",
+          "op": "eq",
+          "value": 1.0
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F02_T4",
+    "object_kind": "evaluation",
+    "case_id": "F02_T4",
+    "family_id": "F02",
+    "source_experience_id": "F02_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a thin rigid solar panel. Current condition: two reachable rigid supporting edges.",
+    "goal": "lift a thin rigid panel",
+    "failure_observation": "fingers miss the two supporting edges",
+    "current_failed_action": {
+      "grasp_width": "narrow"
+    },
+    "action_options": {
+      "A": "Close at 0.4 times the box span.",
+      "B": "Close at 1.4 times the box span.",
+      "C": "Close at 0.7 times the box span.",
+      "D": "Close at 1.0 times the box span to contact both edges."
+    },
+    "diagnosis_options": [
+      "grasp_width",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+    "action_constraints": {
+      "facts": "The two load-bearing edges are one box span apart. At closure the jaws contact only at their commanded span; the top face and interior do not support this lift. Other spans miss the supporting edges.",
+      "effect_fields": [
+        "jaw_span_ratio"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.jaw_span_ratio",
+          "op": "eq",
+          "value": 1.0
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F02_T5",
+    "object_kind": "evaluation",
+    "case_id": "F02_T5",
+    "family_id": "F02",
+    "source_experience_id": "F02_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the flat box has collapsible edges. Current condition: the edges collapse under finger load.",
+    "goal": "lift a flat box",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "grasp_width": "narrow"
+    },
+    "action_options": {
+      "A": "Support the rigid underside.",
+      "B": "Press down on the top face and lift from that contact.",
+      "C": "Pinch one narrow rim edge.",
+      "D": "Copy the two-edge grasp."
+    },
+    "diagnosis_options": [
+      "grasp_width",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: All rim edges collapse under opposing finger load. The flat underside is rigid and reachable; it can carry the load. Direct top and edge contacts provide no underside support.",
+    "action_constraints": {
+      "facts": "All rim edges collapse under opposing finger load. The flat underside is rigid and reachable; it can carry the load. Direct top and edge contacts provide no underside support.",
+      "effect_fields": [
+        "support_surface"
+      ],
+      "rules": [
+        {
+          "path": "parameters.support_surface",
+          "op": "eq",
+          "value": "underside"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F03_T1",
+    "object_kind": "evaluation",
+    "case_id": "F03_T1",
+    "family_id": "F03",
+    "source_experience_id": "F03_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a smooth flask. Current condition: a rigid smooth surface that tolerates moderate pressure.",
+    "goal": "lift a smooth bottle",
+    "failure_observation": "bottle slips before lift",
+    "current_failed_action": {
+      "grip_force": "low"
+    },
+    "action_options": {
+      "A": "Apply 3 force units.",
+      "B": "Apply 1 force unit.",
+      "C": "Apply 5 force units.",
+      "D": "Apply 8 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+    "action_constraints": {
+      "facts": "Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            4,
+            6
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F03_T2",
+    "object_kind": "evaluation",
+    "case_id": "F03_T2",
+    "family_id": "F03",
+    "source_experience_id": "F03_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a smooth canister. Current condition: a rigid smooth surface that tolerates moderate pressure.",
+    "goal": "lift a smooth bottle",
+    "failure_observation": "bottle slips before lift",
+    "current_failed_action": {
+      "grip_force": "low"
+    },
+    "action_options": {
+      "A": "Apply 5 force units.",
+      "B": "Apply 1 force unit.",
+      "C": "Apply 8 force units.",
+      "D": "Apply 3 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+    "action_constraints": {
+      "facts": "Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            4,
+            6
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F03_T3",
+    "object_kind": "evaluation",
+    "case_id": "F03_T3",
+    "family_id": "F03",
+    "source_experience_id": "F03_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a rigid polished cylinder. Current condition: a rigid smooth surface that tolerates moderate pressure.",
+    "goal": "lift a smooth bottle",
+    "failure_observation": "bottle slips before lift",
+    "current_failed_action": {
+      "grip_force": "low"
+    },
+    "action_options": {
+      "A": "Apply 1 force unit.",
+      "B": "Apply 8 force units.",
+      "C": "Apply 5 force units.",
+      "D": "Apply 3 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+    "action_constraints": {
+      "facts": "Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            4,
+            6
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F03_T4",
+    "object_kind": "evaluation",
+    "case_id": "F03_T4",
+    "family_id": "F03",
+    "source_experience_id": "F03_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a polished instrument housing. Current condition: a rigid smooth surface that tolerates moderate pressure.",
+    "goal": "hold a polished instrument housing",
+    "failure_observation": "bottle slips before lift",
+    "current_failed_action": {
+      "grip_force": "low"
+    },
+    "action_options": {
+      "A": "Apply 8 force units.",
+      "B": "Apply 1 force unit.",
+      "C": "Apply 3 force units.",
+      "D": "Apply 5 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+    "action_constraints": {
+      "facts": "Direct grasp requires at least 4 normalized force units to avoid slip; above 6 units the shell deforms. These are stipulated task thresholds, not real-device specifications.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            4,
+            6
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F03_T5",
+    "object_kind": "evaluation",
+    "case_id": "F03_T5",
+    "family_id": "F03",
+    "source_experience_id": "F03_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the smooth bottle has a brittle shell. Current condition: the shell cracks under moderate pressure.",
+    "goal": "lift a smooth bottle",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "grip_force": "low"
+    },
+    "action_options": {
+      "A": "Use a direct grasp at 8 force units without a cradle.",
+      "B": "Copy a direct grasp at 5 force units without a cradle.",
+      "C": "Use a direct grasp at 1 force unit without a cradle.",
+      "D": "Use a padded cradle at 1 contact-pressure unit."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: A direct grasp needs at least 4 force units to retain the load, but the brittle shell tolerates at most 2. A padded cradle supports the load without direct retention force and tolerates contact pressure up to 2.",
+    "action_constraints": {
+      "facts": "A direct grasp needs at least 4 force units to retain the load, but the brittle shell tolerates at most 2. A padded cradle supports the load without direct retention force and tolerates contact pressure up to 2.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [],
+      "model": "support_force",
+      "world": {
+        "direct_min": 4,
+        "shell_max": 2,
+        "cradle_max": 2
+      }
+    }
+  },
+  {
+    "object_id": "F04_T1",
+    "object_kind": "evaluation",
+    "case_id": "F04_T1",
+    "family_id": "F04",
+    "source_experience_id": "F04_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a hollow ornament. Current condition: a light fragile object that can be held with low pressure.",
+    "goal": "lift a fragile ornament",
+    "failure_observation": "shell deforms during grasp",
+    "current_failed_action": {
+      "grip_force": "high"
+    },
+    "action_options": {
+      "A": "Apply 2 force units.",
+      "B": "Apply 5 force units.",
+      "C": "Apply 0.2 force units.",
+      "D": "Apply 8 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+    "action_constraints": {
+      "facts": "Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            1,
+            3
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F04_T2",
+    "object_kind": "evaluation",
+    "case_id": "F04_T2",
+    "family_id": "F04",
+    "source_experience_id": "F04_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a fragile shell. Current condition: a light fragile object that can be held with low pressure.",
+    "goal": "lift a fragile ornament",
+    "failure_observation": "shell deforms during grasp",
+    "current_failed_action": {
+      "grip_force": "high"
+    },
+    "action_options": {
+      "A": "Apply 0.2 force units.",
+      "B": "Apply 5 force units.",
+      "C": "Apply 8 force units.",
+      "D": "Apply 2 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+    "action_constraints": {
+      "facts": "Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            1,
+            3
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F04_T3",
+    "object_kind": "evaluation",
+    "case_id": "F04_T3",
+    "family_id": "F04",
+    "source_experience_id": "F04_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a thin glass shade. Current condition: a light fragile object that can be held with low pressure.",
+    "goal": "lift a fragile ornament",
+    "failure_observation": "shell deforms during grasp",
+    "current_failed_action": {
+      "grip_force": "high"
+    },
+    "action_options": {
+      "A": "Apply 5 force units.",
+      "B": "Apply 8 force units.",
+      "C": "Apply 2 force units.",
+      "D": "Apply 0.2 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+    "action_constraints": {
+      "facts": "Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            1,
+            3
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F04_T4",
+    "object_kind": "evaluation",
+    "case_id": "F04_T4",
+    "family_id": "F04",
+    "source_experience_id": "F04_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a delicate calibration housing. Current condition: a light fragile object that can be held with low pressure.",
+    "goal": "lift a delicate calibration housing",
+    "failure_observation": "shell deforms during grasp",
+    "current_failed_action": {
+      "grip_force": "high"
+    },
+    "action_options": {
+      "A": "Apply 8 force units.",
+      "B": "Apply 5 force units.",
+      "C": "Apply 2 force units.",
+      "D": "Apply 0.2 force units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+    "action_constraints": {
+      "facts": "Direct retention requires at least 1 force unit; the fragile shell deforms above 3. The safe range is a stipulated property of this target.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "set"
+        },
+        {
+          "path": "parameters.force_units",
+          "op": "range",
+          "value": [
+            1,
+            3
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F04_T5",
+    "object_kind": "evaluation",
+    "case_id": "F04_T5",
+    "family_id": "F04",
+    "source_experience_id": "F04_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the target is heavy and slips at low pressure. Current condition: low pressure cannot retain a heavy slippery load.",
+    "goal": "lift a fragile ornament",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "grip_force": "high"
+    },
+    "action_options": {
+      "A": "Use a direct grasp at 8 force units without support.",
+      "B": "Use a direct grasp at 4 force units without support.",
+      "C": "Copy the low-force direct grasp at 2 units without support.",
+      "D": "Use a load-bearing cradle at 2 contact-pressure units."
+    },
+    "diagnosis_options": [
+      "grip_force",
+      "support_mode",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The heavy target needs at least 6 direct-retention force units, but its fragile shell tolerates at most 3. A load-bearing cradle supports its weight at no more than 3 contact-pressure units.",
+    "action_constraints": {
+      "facts": "The heavy target needs at least 6 direct-retention force units, but its fragile shell tolerates at most 3. A load-bearing cradle supports its weight at no more than 3 contact-pressure units.",
+      "effect_fields": [
+        "force_units"
+      ],
+      "rules": [],
+      "model": "support_force",
+      "world": {
+        "direct_min": 6,
+        "shell_max": 3,
+        "cradle_max": 3
+      }
+    }
+  },
+  {
+    "object_id": "F05_T1",
+    "object_kind": "evaluation",
+    "case_id": "F05_T1",
+    "family_id": "F05",
+    "source_experience_id": "F05_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is an edge cup. Current condition: an inward approach route is clear.",
+    "goal": "retrieve an object at a table edge",
+    "failure_observation": "contact pushes the object toward the drop edge",
+    "current_failed_action": {
+      "approach_angle": "outward lateral"
+    },
+    "action_options": {
+      "A": "Approach through the fixed overhead cover.",
+      "B": "Approach outward across the drop edge.",
+      "C": "Approach inward from the supported side.",
+      "D": "Approach from the exposed corner side."
+    },
+    "diagnosis_options": [
+      "approach_angle",
+      "approach_route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+    "action_constraints": {
+      "facts": "The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+      "effect_fields": [
+        "approach_route"
+      ],
+      "rules": [
+        {
+          "path": "parameters.approach_route",
+          "op": "eq",
+          "value": "inward"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F05_T2",
+    "object_kind": "evaluation",
+    "case_id": "F05_T2",
+    "family_id": "F05",
+    "source_experience_id": "F05_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is an edge box. Current condition: an inward approach route is clear.",
+    "goal": "retrieve an object at a table edge",
+    "failure_observation": "contact pushes the object toward the drop edge",
+    "current_failed_action": {
+      "approach_angle": "outward lateral"
+    },
+    "action_options": {
+      "A": "Approach inward from the supported side.",
+      "B": "Approach through the fixed overhead cover.",
+      "C": "Approach outward across the drop edge.",
+      "D": "Approach from the exposed corner side."
+    },
+    "diagnosis_options": [
+      "approach_angle",
+      "approach_route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+    "action_constraints": {
+      "facts": "The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+      "effect_fields": [
+        "approach_route"
+      ],
+      "rules": [
+        {
+          "path": "parameters.approach_route",
+          "op": "eq",
+          "value": "inward"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F05_T3",
+    "object_kind": "evaluation",
+    "case_id": "F05_T3",
+    "family_id": "F05",
+    "source_experience_id": "F05_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a part beside a shelf lip. Current condition: an inward approach route is clear.",
+    "goal": "retrieve an object at a table edge",
+    "failure_observation": "contact pushes the object toward the drop edge",
+    "current_failed_action": {
+      "approach_angle": "outward lateral"
+    },
+    "action_options": {
+      "A": "Approach outward across the drop edge.",
+      "B": "Approach inward from the supported side.",
+      "C": "Approach from the exposed corner side.",
+      "D": "Approach through the fixed overhead cover."
+    },
+    "diagnosis_options": [
+      "approach_angle",
+      "approach_route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+    "action_constraints": {
+      "facts": "The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+      "effect_fields": [
+        "approach_route"
+      ],
+      "rules": [
+        {
+          "path": "parameters.approach_route",
+          "op": "eq",
+          "value": "inward"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F05_T4",
+    "object_kind": "evaluation",
+    "case_id": "F05_T4",
+    "family_id": "F05",
+    "source_experience_id": "F05_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a component beside a platform edge. Current condition: an inward approach route is clear.",
+    "goal": "retrieve an edge component",
+    "failure_observation": "contact pushes the object toward the drop edge",
+    "current_failed_action": {
+      "approach_angle": "outward lateral"
+    },
+    "action_options": {
+      "A": "Approach outward across the drop edge.",
+      "B": "Approach from the exposed corner side.",
+      "C": "Approach inward from the supported side.",
+      "D": "Approach through the fixed overhead cover."
+    },
+    "diagnosis_options": [
+      "approach_angle",
+      "approach_route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+    "action_constraints": {
+      "facts": "The inward route is clear and remains over supported table area. Outward contact points over the drop edge; a corner-side route also leaves the support area; a fixed cover blocks the overhead route.",
+      "effect_fields": [
+        "approach_route"
+      ],
+      "rules": [
+        {
+          "path": "parameters.approach_route",
+          "op": "eq",
+          "value": "inward"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F05_T5",
+    "object_kind": "evaluation",
+    "case_id": "F05_T5",
+    "family_id": "F05",
+    "source_experience_id": "F05_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is a fixed wall blocks the inward route. Current condition: the inward route is blocked by a fixed wall.",
+    "goal": "retrieve an object at a table edge",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "approach_angle": "outward lateral"
+    },
+    "action_options": {
+      "A": "Copy the inward route through the fixed wall.",
+      "B": "Approach outward over the drop edge.",
+      "C": "Stabilize from the overhead route.",
+      "D": "Approach from the unsupported exposed corner."
+    },
+    "diagnosis_options": [
+      "approach_angle",
+      "approach_route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: A fixed wall blocks the inward route. The overhead route is clear and stays over the support area. The outward and exposed-corner routes lead beyond support.",
+    "action_constraints": {
+      "facts": "A fixed wall blocks the inward route. The overhead route is clear and stays over the support area. The outward and exposed-corner routes lead beyond support.",
+      "effect_fields": [
+        "approach_route"
+      ],
+      "rules": [
+        {
+          "path": "parameters.approach_route",
+          "op": "eq",
+          "value": "overhead"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F06_T1",
+    "object_kind": "evaluation",
+    "case_id": "F06_T1",
+    "family_id": "F06",
+    "source_experience_id": "F06_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is an occluded knob. Current condition: moving to the side reveals the target.",
+    "goal": "grasp an occluded part",
+    "failure_observation": "grasp targets an incorrectly localized edge",
+    "current_failed_action": {
+      "viewpoint": "occluded front"
+    },
+    "action_options": {
+      "A": "Use the occluded front view.",
+      "B": "Move to the clear side view.",
+      "C": "Move to the screened overhead view.",
+      "D": "Move to the screened rear view."
+    },
+    "diagnosis_options": [
+      "viewpoint",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+    "action_constraints": {
+      "facts": "Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+      "effect_fields": [
+        "view"
+      ],
+      "rules": [
+        {
+          "path": "parameters.view",
+          "op": "eq",
+          "value": "side"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F06_T2",
+    "object_kind": "evaluation",
+    "case_id": "F06_T2",
+    "family_id": "F06",
+    "source_experience_id": "F06_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is an occluded block. Current condition: moving to the side reveals the target.",
+    "goal": "grasp an occluded part",
+    "failure_observation": "grasp targets an incorrectly localized edge",
+    "current_failed_action": {
+      "viewpoint": "occluded front"
+    },
+    "action_options": {
+      "A": "Move to the clear side view.",
+      "B": "Move to the screened overhead view.",
+      "C": "Use the occluded front view.",
+      "D": "Move to the screened rear view."
+    },
+    "diagnosis_options": [
+      "viewpoint",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+    "action_constraints": {
+      "facts": "Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+      "effect_fields": [
+        "view"
+      ],
+      "rules": [
+        {
+          "path": "parameters.view",
+          "op": "eq",
+          "value": "side"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F06_T3",
+    "object_kind": "evaluation",
+    "case_id": "F06_T3",
+    "family_id": "F06",
+    "source_experience_id": "F06_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a part behind a rack. Current condition: moving to the side reveals the target.",
+    "goal": "grasp an occluded part",
+    "failure_observation": "grasp targets an incorrectly localized edge",
+    "current_failed_action": {
+      "viewpoint": "occluded front"
+    },
+    "action_options": {
+      "A": "Use the occluded front view.",
+      "B": "Move to the screened rear view.",
+      "C": "Move to the clear side view.",
+      "D": "Move to the screened overhead view."
+    },
+    "diagnosis_options": [
+      "viewpoint",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+    "action_constraints": {
+      "facts": "Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+      "effect_fields": [
+        "view"
+      ],
+      "rules": [
+        {
+          "path": "parameters.view",
+          "op": "eq",
+          "value": "side"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F06_T4",
+    "object_kind": "evaluation",
+    "case_id": "F06_T4",
+    "family_id": "F06",
+    "source_experience_id": "F06_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is an inspection mark behind a housing. Current condition: moving to the side reveals the target.",
+    "goal": "localize an inspection mark",
+    "failure_observation": "grasp targets an incorrectly localized edge",
+    "current_failed_action": {
+      "viewpoint": "occluded front"
+    },
+    "action_options": {
+      "A": "Move to the clear side view.",
+      "B": "Use the occluded front view.",
+      "C": "Move to the screened overhead view.",
+      "D": "Move to the screened rear view."
+    },
+    "diagnosis_options": [
+      "viewpoint",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+    "action_constraints": {
+      "facts": "Only the side view reveals the target edge. Front is occluded, and fixed screens block the rear and overhead views.",
+      "effect_fields": [
+        "view"
+      ],
+      "rules": [
+        {
+          "path": "parameters.view",
+          "op": "eq",
+          "value": "side"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F06_T5",
+    "object_kind": "evaluation",
+    "case_id": "F06_T5",
+    "family_id": "F06",
+    "source_experience_id": "F06_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is opaque side screens leave only an overhead view clear. Current condition: all side views remain opaque.",
+    "goal": "grasp an occluded part",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "viewpoint": "occluded front"
+    },
+    "action_options": {
+      "A": "Use the blocked front view.",
+      "B": "Copy the screened side view.",
+      "C": "Use the blocked rear view.",
+      "D": "Obtain the overhead view."
+    },
+    "diagnosis_options": [
+      "viewpoint",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Only overhead reveals the target edge. Front and rear are blocked; opaque side screens prevent any side view from resolving the edge.",
+    "action_constraints": {
+      "facts": "Only overhead reveals the target edge. Front and rear are blocked; opaque side screens prevent any side view from resolving the edge.",
+      "effect_fields": [
+        "view"
+      ],
+      "rules": [
+        {
+          "path": "parameters.view",
+          "op": "eq",
+          "value": "overhead"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F07_T1",
+    "object_kind": "evaluation",
+    "case_id": "F07_T1",
+    "family_id": "F07",
+    "source_experience_id": "F07_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a deep bin part. Current condition: the deeper path is clear and the target is below the shallow reach.",
+    "goal": "retrieve a part from a deep bin",
+    "failure_observation": "gripper closes above the target",
+    "current_failed_action": {
+      "insertion_depth": "shallow"
+    },
+    "action_options": {
+      "A": "Insert to depth 10.",
+      "B": "Insert to depth 30.",
+      "C": "Insert to depth 20.",
+      "D": "Insert to depth 45."
+    },
+    "diagnosis_options": [
+      "insertion_depth",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+    "action_constraints": {
+      "facts": "The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+      "effect_fields": [
+        "depth_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.depth_units",
+          "op": "range",
+          "value": [
+            28,
+            32
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F07_T2",
+    "object_kind": "evaluation",
+    "case_id": "F07_T2",
+    "family_id": "F07",
+    "source_experience_id": "F07_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a deep basket part. Current condition: the deeper path is clear and the target is below the shallow reach.",
+    "goal": "retrieve a part from a deep bin",
+    "failure_observation": "gripper closes above the target",
+    "current_failed_action": {
+      "insertion_depth": "shallow"
+    },
+    "action_options": {
+      "A": "Insert to depth 45.",
+      "B": "Insert to depth 30.",
+      "C": "Insert to depth 10.",
+      "D": "Insert to depth 20."
+    },
+    "diagnosis_options": [
+      "insertion_depth",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+    "action_constraints": {
+      "facts": "The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+      "effect_fields": [
+        "depth_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.depth_units",
+          "op": "range",
+          "value": [
+            28,
+            32
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F07_T3",
+    "object_kind": "evaluation",
+    "case_id": "F07_T3",
+    "family_id": "F07",
+    "source_experience_id": "F07_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a part in a vertical well. Current condition: the deeper path is clear and the target is below the shallow reach.",
+    "goal": "retrieve a part from a deep bin",
+    "failure_observation": "gripper closes above the target",
+    "current_failed_action": {
+      "insertion_depth": "shallow"
+    },
+    "action_options": {
+      "A": "Insert to depth 10.",
+      "B": "Insert to depth 20.",
+      "C": "Insert to depth 45.",
+      "D": "Insert to depth 30."
+    },
+    "diagnosis_options": [
+      "insertion_depth",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+    "action_constraints": {
+      "facts": "The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+      "effect_fields": [
+        "depth_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.depth_units",
+          "op": "range",
+          "value": [
+            28,
+            32
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F07_T4",
+    "object_kind": "evaluation",
+    "case_id": "F07_T4",
+    "family_id": "F07",
+    "source_experience_id": "F07_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a probe target in a recessed port. Current condition: the deeper path is clear and the target is below the shallow reach.",
+    "goal": "reach a recessed probe target",
+    "failure_observation": "gripper closes above the target",
+    "current_failed_action": {
+      "insertion_depth": "shallow"
+    },
+    "action_options": {
+      "A": "Insert to depth 10.",
+      "B": "Insert to depth 30.",
+      "C": "Insert to depth 45.",
+      "D": "Insert to depth 20."
+    },
+    "diagnosis_options": [
+      "insertion_depth",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+    "action_constraints": {
+      "facts": "The target-contact depth is 30 units below the lip; contact is possible from 28 to 32. The bin floor is at 35; stopping shallower than 28 misses the target.",
+      "effect_fields": [
+        "depth_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.depth_units",
+          "op": "range",
+          "value": [
+            28,
+            32
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F07_T5",
+    "object_kind": "evaluation",
+    "case_id": "F07_T5",
+    "family_id": "F07",
+    "source_experience_id": "F07_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is a hard insert blocks the path above the target. Current condition: a hard stop blocks deeper insertion.",
+    "goal": "retrieve a part from a deep bin",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "insertion_depth": "shallow"
+    },
+    "action_options": {
+      "A": "Remove the hard insert before deeper insertion.",
+      "B": "Insert to depth 10 and close above the target.",
+      "C": "Insert to depth 40 without removing the hard insert.",
+      "D": "Copy insertion to depth 30 without removing the hard insert."
+    },
+    "diagnosis_options": [
+      "insertion_depth",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: A removable hard insert blocks the path at depth 18, above the target at 30. Insertion cannot pass it. Removing that insert is the available next prerequisite to progress; shallow closure above it cannot contact the target.",
+    "action_constraints": {
+      "facts": "A removable hard insert blocks the path at depth 18, above the target at 30. Insertion cannot pass it. Removing that insert is the available next prerequisite to progress; shallow closure above it cannot contact the target.",
+      "effect_fields": [
+        "depth_units"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "remove_insert"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F08_T1",
+    "object_kind": "evaluation",
+    "case_id": "F08_T1",
+    "family_id": "F08",
+    "source_experience_id": "F08_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a narrow slot part. Current condition: a compact centered path fits the object.",
+    "goal": "move a part through a narrow gap",
+    "failure_observation": "swept path hits the side wall",
+    "current_failed_action": {
+      "trajectory_clearance": "wide lateral sweep"
+    },
+    "action_options": {
+      "A": "Use a right lateral sweep.",
+      "B": "Use an upward arc.",
+      "C": "Use a left lateral sweep.",
+      "D": "Use the centered compact path."
+    },
+    "diagnosis_options": [
+      "trajectory_clearance",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+    "action_constraints": {
+      "facts": "The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+      "effect_fields": [
+        "path"
+      ],
+      "rules": [
+        {
+          "path": "parameters.path",
+          "op": "eq",
+          "value": "centered"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F08_T2",
+    "object_kind": "evaluation",
+    "case_id": "F08_T2",
+    "family_id": "F08",
+    "source_experience_id": "F08_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a narrow shelf part. Current condition: a compact centered path fits the object.",
+    "goal": "move a part through a narrow gap",
+    "failure_observation": "swept path hits the side wall",
+    "current_failed_action": {
+      "trajectory_clearance": "wide lateral sweep"
+    },
+    "action_options": {
+      "A": "Use an upward arc.",
+      "B": "Use a right lateral sweep.",
+      "C": "Use the centered compact path.",
+      "D": "Use a left lateral sweep."
+    },
+    "diagnosis_options": [
+      "trajectory_clearance",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+    "action_constraints": {
+      "facts": "The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+      "effect_fields": [
+        "path"
+      ],
+      "rules": [
+        {
+          "path": "parameters.path",
+          "op": "eq",
+          "value": "centered"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F08_T3",
+    "object_kind": "evaluation",
+    "case_id": "F08_T3",
+    "family_id": "F08",
+    "source_experience_id": "F08_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a tray through a hatch. Current condition: a compact centered path fits the object.",
+    "goal": "move a part through a narrow gap",
+    "failure_observation": "swept path hits the side wall",
+    "current_failed_action": {
+      "trajectory_clearance": "wide lateral sweep"
+    },
+    "action_options": {
+      "A": "Use the centered compact path.",
+      "B": "Use an upward arc.",
+      "C": "Use a right lateral sweep.",
+      "D": "Use a left lateral sweep."
+    },
+    "diagnosis_options": [
+      "trajectory_clearance",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+    "action_constraints": {
+      "facts": "The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+      "effect_fields": [
+        "path"
+      ],
+      "rules": [
+        {
+          "path": "parameters.path",
+          "op": "eq",
+          "value": "centered"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F08_T4",
+    "object_kind": "evaluation",
+    "case_id": "F08_T4",
+    "family_id": "F08",
+    "source_experience_id": "F08_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a sensor carrier through a service channel. Current condition: a compact centered path fits the object.",
+    "goal": "move a sensor carrier through a channel",
+    "failure_observation": "swept path hits the side wall",
+    "current_failed_action": {
+      "trajectory_clearance": "wide lateral sweep"
+    },
+    "action_options": {
+      "A": "Use the centered compact path.",
+      "B": "Use a right lateral sweep.",
+      "C": "Use an upward arc.",
+      "D": "Use a left lateral sweep."
+    },
+    "diagnosis_options": [
+      "trajectory_clearance",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+    "action_constraints": {
+      "facts": "The centered path has clearance for the target. A left sweep and a right sweep hit their respective walls; an upward arc hits the low roof. The target fits the centered opening.",
+      "effect_fields": [
+        "path"
+      ],
+      "rules": [
+        {
+          "path": "parameters.path",
+          "op": "eq",
+          "value": "centered"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F08_T5",
+    "object_kind": "evaluation",
+    "case_id": "F08_T5",
+    "family_id": "F08",
+    "source_experience_id": "F08_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the target is wider than the opening but an alternate opening exists. Current condition: the object is wider than the entire opening.",
+    "goal": "move a part through a narrow gap",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "trajectory_clearance": "wide lateral sweep"
+    },
+    "action_options": {
+      "A": "Copy the centered path through the original opening.",
+      "B": "Use the left sweep through the original opening.",
+      "C": "Use the right sweep through the original opening.",
+      "D": "Use a centered path through the alternate opening."
+    },
+    "diagnosis_options": [
+      "trajectory_clearance",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The target width is 4 units. Original-opening clearance is 2, so no original trajectory fits. A reachable alternate opening has clearance 6. Left and right original sweeps still use the opening of width 2.",
+    "action_constraints": {
+      "facts": "The target width is 4 units. Original-opening clearance is 2, so no original trajectory fits. A reachable alternate opening has clearance 6. Left and right original sweeps still use the opening of width 2.",
+      "effect_fields": [
+        "route",
+        "path"
+      ],
+      "rules": [
+        {
+          "path": "parameters.route",
+          "op": "eq",
+          "value": "alternate"
+        },
+        {
+          "path": "parameters.path",
+          "op": "eq",
+          "value": "centered"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F09_T1",
+    "object_kind": "evaluation",
+    "case_id": "F09_T1",
+    "family_id": "F09",
+    "source_experience_id": "F09_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a long stick. Current condition: the long axis can fit when aligned.",
+    "goal": "carry a long rod through a doorway",
+    "failure_observation": "rod ends collide with doorway",
+    "current_failed_action": {
+      "orientation": "crosswise"
+    },
+    "action_options": {
+      "A": "Carry at 90 degrees to the opening axis.",
+      "B": "Carry at 30 degrees to the opening axis.",
+      "C": "Align the long axis at 0 degrees to the opening axis.",
+      "D": "Carry at 45 degrees to the opening axis."
+    },
+    "diagnosis_options": [
+      "orientation",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+    "action_constraints": {
+      "facts": "In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -5,
+            5
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F09_T2",
+    "object_kind": "evaluation",
+    "case_id": "F09_T2",
+    "family_id": "F09",
+    "source_experience_id": "F09_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a long bar. Current condition: the long axis can fit when aligned.",
+    "goal": "carry a long rod through a doorway",
+    "failure_observation": "rod ends collide with doorway",
+    "current_failed_action": {
+      "orientation": "crosswise"
+    },
+    "action_options": {
+      "A": "Carry at 30 degrees to the opening axis.",
+      "B": "Carry at 45 degrees to the opening axis.",
+      "C": "Align the long axis at 0 degrees to the opening axis.",
+      "D": "Carry at 90 degrees to the opening axis."
+    },
+    "diagnosis_options": [
+      "orientation",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+    "action_constraints": {
+      "facts": "In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -5,
+            5
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F09_T3",
+    "object_kind": "evaluation",
+    "case_id": "F09_T3",
+    "family_id": "F09",
+    "source_experience_id": "F09_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a long beam. Current condition: the long axis can fit when aligned.",
+    "goal": "carry a long rod through a doorway",
+    "failure_observation": "rod ends collide with doorway",
+    "current_failed_action": {
+      "orientation": "crosswise"
+    },
+    "action_options": {
+      "A": "Carry at 90 degrees to the opening axis.",
+      "B": "Align the long axis at 0 degrees to the opening axis.",
+      "C": "Carry at 30 degrees to the opening axis.",
+      "D": "Carry at 45 degrees to the opening axis."
+    },
+    "diagnosis_options": [
+      "orientation",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+    "action_constraints": {
+      "facts": "In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -5,
+            5
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F09_T4",
+    "object_kind": "evaluation",
+    "case_id": "F09_T4",
+    "family_id": "F09",
+    "source_experience_id": "F09_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a long antenna assembly. Current condition: the long axis can fit when aligned.",
+    "goal": "carry an antenna assembly through an opening",
+    "failure_observation": "rod ends collide with doorway",
+    "current_failed_action": {
+      "orientation": "crosswise"
+    },
+    "action_options": {
+      "A": "Carry at 90 degrees to the opening axis.",
+      "B": "Carry at 45 degrees to the opening axis.",
+      "C": "Carry at 30 degrees to the opening axis.",
+      "D": "Align the long axis at 0 degrees to the opening axis."
+    },
+    "diagnosis_options": [
+      "orientation",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+    "action_constraints": {
+      "facts": "In this doorway, only long-axis angles within 5 degrees of the opening axis fit. The four commanded angles are measured relative to that axis; the rod does not deform.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -5,
+            5
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F09_T5",
+    "object_kind": "evaluation",
+    "case_id": "F09_T5",
+    "family_id": "F09",
+    "source_experience_id": "F09_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the rod remains too wide even after alignment. Current condition: alignment still exceeds the opening dimensions.",
+    "goal": "carry a long rod through a doorway",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "orientation": "crosswise"
+    },
+    "action_options": {
+      "A": "Use the alternate doorway with the rod aligned at 0 degrees.",
+      "B": "Carry at 45 degrees through the original doorway.",
+      "C": "Copy alignment at 0 degrees through the original doorway.",
+      "D": "Carry crosswise at 90 degrees through the original doorway."
+    },
+    "diagnosis_options": [
+      "orientation",
+      "route",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The rod minimum projected width is 9 units; the original doorway is width 8, so it cannot fit at any angle. The available alternate doorway is width 12 and admits the aligned rod.",
+    "action_constraints": {
+      "facts": "The rod minimum projected width is 9 units; the original doorway is width 8, so it cannot fit at any angle. The available alternate doorway is width 12 and admits the aligned rod.",
+      "effect_fields": [
+        "route",
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.route",
+          "op": "eq",
+          "value": "alternate"
+        },
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -5,
+            5
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F10_T1",
+    "object_kind": "evaluation",
+    "case_id": "F10_T1",
+    "family_id": "F10",
+    "source_experience_id": "F10_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a sliding puck. Current condition: slow contact avoids displacement on a free surface.",
+    "goal": "contact a freely sliding object",
+    "failure_observation": "initial impact displaces the target",
+    "current_failed_action": {
+      "contact_speed": "fast"
+    },
+    "action_options": {
+      "A": "Contact at speed 120.",
+      "B": "Contact at speed 10.",
+      "C": "Contact at speed 200.",
+      "D": "Contact at speed 60."
+    },
+    "diagnosis_options": [
+      "contact_speed",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+    "action_constraints": {
+      "facts": "Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+      "effect_fields": [
+        "speed_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.speed_units",
+          "op": "range",
+          "value": [
+            1,
+            20
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F10_T2",
+    "object_kind": "evaluation",
+    "case_id": "F10_T2",
+    "family_id": "F10",
+    "source_experience_id": "F10_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a sliding tray. Current condition: slow contact avoids displacement on a free surface.",
+    "goal": "contact a freely sliding object",
+    "failure_observation": "initial impact displaces the target",
+    "current_failed_action": {
+      "contact_speed": "fast"
+    },
+    "action_options": {
+      "A": "Contact at speed 60.",
+      "B": "Contact at speed 120.",
+      "C": "Contact at speed 10.",
+      "D": "Contact at speed 200."
+    },
+    "diagnosis_options": [
+      "contact_speed",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+    "action_constraints": {
+      "facts": "Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+      "effect_fields": [
+        "speed_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.speed_units",
+          "op": "range",
+          "value": [
+            1,
+            20
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F10_T3",
+    "object_kind": "evaluation",
+    "case_id": "F10_T3",
+    "family_id": "F10",
+    "source_experience_id": "F10_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a loose tile. Current condition: slow contact avoids displacement on a free surface.",
+    "goal": "contact a freely sliding object",
+    "failure_observation": "initial impact displaces the target",
+    "current_failed_action": {
+      "contact_speed": "fast"
+    },
+    "action_options": {
+      "A": "Contact at speed 120.",
+      "B": "Contact at speed 200.",
+      "C": "Contact at speed 60.",
+      "D": "Contact at speed 10."
+    },
+    "diagnosis_options": [
+      "contact_speed",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+    "action_constraints": {
+      "facts": "Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+      "effect_fields": [
+        "speed_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.speed_units",
+          "op": "range",
+          "value": [
+            1,
+            20
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F10_T4",
+    "object_kind": "evaluation",
+    "case_id": "F10_T4",
+    "family_id": "F10",
+    "source_experience_id": "F10_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a movable calibration sled. Current condition: slow contact avoids displacement on a free surface.",
+    "goal": "contact a movable calibration sled",
+    "failure_observation": "initial impact displaces the target",
+    "current_failed_action": {
+      "contact_speed": "fast"
+    },
+    "action_options": {
+      "A": "Contact at speed 200.",
+      "B": "Contact at speed 60.",
+      "C": "Contact at speed 10.",
+      "D": "Contact at speed 120."
+    },
+    "diagnosis_options": [
+      "contact_speed",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+    "action_constraints": {
+      "facts": "Stable contact on this free surface requires a positive speed no greater than 20 units per second. Higher contact speeds displace the target.",
+      "effect_fields": [
+        "speed_units"
+      ],
+      "rules": [
+        {
+          "path": "parameters.speed_units",
+          "op": "range",
+          "value": [
+            1,
+            20
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F10_T5",
+    "object_kind": "evaluation",
+    "case_id": "F10_T5",
+    "family_id": "F10",
+    "source_experience_id": "F10_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the target is latched and requires a short impulse. Current condition: a latch requires a short fast impulse.",
+    "goal": "contact a freely sliding object",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "contact_speed": "fast"
+    },
+    "action_options": {
+      "A": "Copy slow contact at speed 10 for 0.1 second.",
+      "B": "Apply a pulse at speed 120 for 0.1 second.",
+      "C": "Apply a medium-speed pulse at 60 for 0.1 second.",
+      "D": "Use prolonged fast contact at speed 120 for 1.0 second."
+    },
+    "diagnosis_options": [
+      "contact_speed",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The latch release requires speed from 100 to 140 for a pulse from 0.05 to 0.15 seconds. A slow pulse cannot release it; a prolonged fast contact exceeds the specified release pulse and trips the stop.",
+    "action_constraints": {
+      "facts": "The latch release requires speed from 100 to 140 for a pulse from 0.05 to 0.15 seconds. A slow pulse cannot release it; a prolonged fast contact exceeds the specified release pulse and trips the stop.",
+      "effect_fields": [
+        "speed_units",
+        "duration_seconds"
+      ],
+      "rules": [
+        {
+          "path": "parameters.speed_units",
+          "op": "range",
+          "value": [
+            100,
+            140
+          ]
+        },
+        {
+          "path": "parameters.duration_seconds",
+          "op": "range",
+          "value": [
+            0.05,
+            0.15
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F11_T1",
+    "object_kind": "evaluation",
+    "case_id": "F11_T1",
+    "family_id": "F11",
+    "source_experience_id": "F11_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a guided cube. Current condition: a straight guide constrains motion toward the goal.",
+    "goal": "push a guided block to its goal",
+    "failure_observation": "block jams against guide",
+    "current_failed_action": {
+      "force_direction": "across guide"
+    },
+    "action_options": {
+      "A": "Push across the guide at 270 degrees.",
+      "B": "Push forward along the guide at 0 degrees.",
+      "C": "Push backward along the guide at 180 degrees.",
+      "D": "Push across the guide at 90 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+    "action_constraints": {
+      "facts": "At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+      "effect_fields": [
+        "force_angles"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angles",
+          "op": "eq",
+          "value": [
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F11_T2",
+    "object_kind": "evaluation",
+    "case_id": "F11_T2",
+    "family_id": "F11",
+    "source_experience_id": "F11_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a guided parcel. Current condition: a straight guide constrains motion toward the goal.",
+    "goal": "push a guided block to its goal",
+    "failure_observation": "block jams against guide",
+    "current_failed_action": {
+      "force_direction": "across guide"
+    },
+    "action_options": {
+      "A": "Push across the guide at 90 degrees.",
+      "B": "Push across the guide at 270 degrees.",
+      "C": "Push forward along the guide at 0 degrees.",
+      "D": "Push backward along the guide at 180 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+    "action_constraints": {
+      "facts": "At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+      "effect_fields": [
+        "force_angles"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angles",
+          "op": "eq",
+          "value": [
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F11_T3",
+    "object_kind": "evaluation",
+    "case_id": "F11_T3",
+    "family_id": "F11",
+    "source_experience_id": "F11_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a wheeled cart on a rail. Current condition: a straight guide constrains motion toward the goal.",
+    "goal": "push a guided block to its goal",
+    "failure_observation": "block jams against guide",
+    "current_failed_action": {
+      "force_direction": "across guide"
+    },
+    "action_options": {
+      "A": "Push across the guide at 270 degrees.",
+      "B": "Push backward along the guide at 180 degrees.",
+      "C": "Push forward along the guide at 0 degrees.",
+      "D": "Push across the guide at 90 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+    "action_constraints": {
+      "facts": "At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+      "effect_fields": [
+        "force_angles"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angles",
+          "op": "eq",
+          "value": [
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F11_T4",
+    "object_kind": "evaluation",
+    "case_id": "F11_T4",
+    "family_id": "F11",
+    "source_experience_id": "F11_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a payload carrier in a guide. Current condition: a straight guide constrains motion toward the goal.",
+    "goal": "move a payload carrier along a guide",
+    "failure_observation": "block jams against guide",
+    "current_failed_action": {
+      "force_direction": "across guide"
+    },
+    "action_options": {
+      "A": "Push forward along the guide at 0 degrees.",
+      "B": "Push across the guide at 270 degrees.",
+      "C": "Push across the guide at 90 degrees.",
+      "D": "Push backward along the guide at 180 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+    "action_constraints": {
+      "facts": "At the current straight guide segment, forward along-guide direction is 0 degrees. Motion toward the goal requires that forward direction; 90 is across the guide, 180 reverses progress, and 270 is the opposite transverse direction.",
+      "effect_fields": [
+        "force_angles"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angles",
+          "op": "eq",
+          "value": [
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F11_T5",
+    "object_kind": "evaluation",
+    "case_id": "F11_T5",
+    "family_id": "F11",
+    "source_experience_id": "F11_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the guide curves and a fixed straight push jams. Current condition: the guide curves before the goal.",
+    "goal": "push a guided block to its goal",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "force_direction": "across guide"
+    },
+    "action_options": {
+      "A": "Push backward at 180 then 270 degrees on the two segments.",
+      "B": "Push at 0 then 90 degrees on the two segments.",
+      "C": "Hold the initial 0-degree heading through both segments without adapting to the bend.",
+      "D": "Push transversely at 90 then 180 degrees across the two segments."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The curved guide has successive local forward directions 0 and 90 degrees. A fixed initial heading jams at the bend. Each segment must receive force along its local forward direction.",
+    "action_constraints": {
+      "facts": "The curved guide has successive local forward directions 0 and 90 degrees. A fixed initial heading jams at the bend. Each segment must receive force along its local forward direction.",
+      "effect_fields": [
+        "force_angles"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angles",
+          "op": "eq",
+          "value": [
+            0,
+            90
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F12_T1",
+    "object_kind": "evaluation",
+    "case_id": "F12_T1",
+    "family_id": "F12",
+    "source_experience_id": "F12_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a rocking block. Current condition: a flat stable face matches a level support.",
+    "goal": "place a part on a support",
+    "failure_observation": "part rocks after release",
+    "current_failed_action": {
+      "placement_pose": "tilted"
+    },
+    "action_options": {
+      "A": "Place at a 30-degree tilt.",
+      "B": "Place the stable face at 0 degrees, level.",
+      "C": "Place at a minus-30-degree tilt.",
+      "D": "Place on its side at 90 degrees."
+    },
+    "diagnosis_options": [
+      "placement_pose",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+    "action_constraints": {
+      "facts": "The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+      "effect_fields": [
+        "pose_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.pose_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F12_T2",
+    "object_kind": "evaluation",
+    "case_id": "F12_T2",
+    "family_id": "F12",
+    "source_experience_id": "F12_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a rocking container. Current condition: a flat stable face matches a level support.",
+    "goal": "place a part on a support",
+    "failure_observation": "part rocks after release",
+    "current_failed_action": {
+      "placement_pose": "tilted"
+    },
+    "action_options": {
+      "A": "Place at a minus-30-degree tilt.",
+      "B": "Place at a 30-degree tilt.",
+      "C": "Place the stable face at 0 degrees, level.",
+      "D": "Place on its side at 90 degrees."
+    },
+    "diagnosis_options": [
+      "placement_pose",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+    "action_constraints": {
+      "facts": "The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+      "effect_fields": [
+        "pose_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.pose_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F12_T3",
+    "object_kind": "evaluation",
+    "case_id": "F12_T3",
+    "family_id": "F12",
+    "source_experience_id": "F12_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a module on a base. Current condition: a flat stable face matches a level support.",
+    "goal": "place a part on a support",
+    "failure_observation": "part rocks after release",
+    "current_failed_action": {
+      "placement_pose": "tilted"
+    },
+    "action_options": {
+      "A": "Place on its side at 90 degrees.",
+      "B": "Place at a minus-30-degree tilt.",
+      "C": "Place at a 30-degree tilt.",
+      "D": "Place the stable face at 0 degrees, level."
+    },
+    "diagnosis_options": [
+      "placement_pose",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+    "action_constraints": {
+      "facts": "The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+      "effect_fields": [
+        "pose_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.pose_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F12_T4",
+    "object_kind": "evaluation",
+    "case_id": "F12_T4",
+    "family_id": "F12",
+    "source_experience_id": "F12_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a ballast unit on a mount. Current condition: a flat stable face matches a level support.",
+    "goal": "seat a ballast unit on a mount",
+    "failure_observation": "part rocks after release",
+    "current_failed_action": {
+      "placement_pose": "tilted"
+    },
+    "action_options": {
+      "A": "Place at a 30-degree tilt.",
+      "B": "Place the stable face at 0 degrees, level.",
+      "C": "Place at a minus-30-degree tilt.",
+      "D": "Place on its side at 90 degrees."
+    },
+    "diagnosis_options": [
+      "placement_pose",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+    "action_constraints": {
+      "facts": "The support is level. A stable resting pose must be within 2 degrees of level; all commanded angles use the same support reference frame.",
+      "effect_fields": [
+        "pose_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.pose_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F12_T5",
+    "object_kind": "evaluation",
+    "case_id": "F12_T5",
+    "family_id": "F12",
+    "source_experience_id": "F12_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is a shaped socket requires a specified tilted pose. Current condition: the support is a shaped socket requiring a tilted pose.",
+    "goal": "place a part on a support",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "placement_pose": "tilted"
+    },
+    "action_options": {
+      "A": "Place at a minus-30-degree tilt.",
+      "B": "Place at a specifically commanded 60-degree tilt.",
+      "C": "Place at the socket pose of 30 degrees.",
+      "D": "Copy the level 0-degree pose."
+    },
+    "diagnosis_options": [
+      "placement_pose",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The keyed support socket requires a 30-degree resting pose, within 2 degrees. Level, minus-30, and 60-degree poses miss the supporting socket faces.",
+    "action_constraints": {
+      "facts": "The keyed support socket requires a 30-degree resting pose, within 2 degrees. Level, minus-30, and 60-degree poses miss the supporting socket faces.",
+      "effect_fields": [
+        "pose_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.pose_degrees",
+          "op": "range",
+          "value": [
+            28,
+            32
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F13_T1",
+    "object_kind": "evaluation",
+    "case_id": "F13_T1",
+    "family_id": "F13",
+    "source_experience_id": "F13_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a stacking cube. Current condition: a centered footprint is supported by the base.",
+    "goal": "stack a block on another block",
+    "failure_observation": "upper block tips after release",
+    "current_failed_action": {
+      "alignment": "offset"
+    },
+    "action_options": {
+      "A": "Align at left offset [-1,0].",
+      "B": "Align at front offset [0,1].",
+      "C": "Align at the center [0,0].",
+      "D": "Align at right offset [1,0]."
+    },
+    "diagnosis_options": [
+      "alignment",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+    "action_constraints": {
+      "facts": "The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+      "effect_fields": [
+        "position"
+      ],
+      "rules": [
+        {
+          "path": "parameters.position",
+          "op": "eq",
+          "value": [
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F13_T2",
+    "object_kind": "evaluation",
+    "case_id": "F13_T2",
+    "family_id": "F13",
+    "source_experience_id": "F13_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a stacking case. Current condition: a centered footprint is supported by the base.",
+    "goal": "stack a block on another block",
+    "failure_observation": "upper block tips after release",
+    "current_failed_action": {
+      "alignment": "offset"
+    },
+    "action_options": {
+      "A": "Align at left offset [-1,0].",
+      "B": "Align at front offset [0,1].",
+      "C": "Align at the center [0,0].",
+      "D": "Align at right offset [1,0]."
+    },
+    "diagnosis_options": [
+      "alignment",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+    "action_constraints": {
+      "facts": "The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+      "effect_fields": [
+        "position"
+      ],
+      "rules": [
+        {
+          "path": "parameters.position",
+          "op": "eq",
+          "value": [
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F13_T3",
+    "object_kind": "evaluation",
+    "case_id": "F13_T3",
+    "family_id": "F13",
+    "source_experience_id": "F13_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a storage module stack. Current condition: a centered footprint is supported by the base.",
+    "goal": "stack a block on another block",
+    "failure_observation": "upper block tips after release",
+    "current_failed_action": {
+      "alignment": "offset"
+    },
+    "action_options": {
+      "A": "Align at the center [0,0].",
+      "B": "Align at right offset [1,0].",
+      "C": "Align at left offset [-1,0].",
+      "D": "Align at front offset [0,1]."
+    },
+    "diagnosis_options": [
+      "alignment",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+    "action_constraints": {
+      "facts": "The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+      "effect_fields": [
+        "position"
+      ],
+      "rules": [
+        {
+          "path": "parameters.position",
+          "op": "eq",
+          "value": [
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F13_T4",
+    "object_kind": "evaluation",
+    "case_id": "F13_T4",
+    "family_id": "F13",
+    "source_experience_id": "F13_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a layered structural spacer. Current condition: a centered footprint is supported by the base.",
+    "goal": "stack structural spacers",
+    "failure_observation": "upper block tips after release",
+    "current_failed_action": {
+      "alignment": "offset"
+    },
+    "action_options": {
+      "A": "Align at left offset [-1,0].",
+      "B": "Align at front offset [0,1].",
+      "C": "Align at the center [0,0].",
+      "D": "Align at right offset [1,0]."
+    },
+    "diagnosis_options": [
+      "alignment",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+    "action_constraints": {
+      "facts": "The load-bearing footprint is centered at coordinate [0,0], within 0.1 units on each axis. Offsets of one unit in any listed direction lie outside support.",
+      "effect_fields": [
+        "position"
+      ],
+      "rules": [
+        {
+          "path": "parameters.position",
+          "op": "eq",
+          "value": [
+            0,
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F13_T5",
+    "object_kind": "evaluation",
+    "case_id": "F13_T5",
+    "family_id": "F13",
+    "source_experience_id": "F13_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the base center is a hole with a supported offset ledge. Current condition: the base center is a hole and an offset ledge is the support.",
+    "goal": "stack a block on another block",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "alignment": "offset"
+    },
+    "action_options": {
+      "A": "Copy center alignment [0,0].",
+      "B": "Align at the left offset [-1,0].",
+      "C": "Align at the right ledge [1,0].",
+      "D": "Align at the front offset [0,1]."
+    },
+    "diagnosis_options": [
+      "alignment",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The center [0,0] is a hole. The only listed load-bearing ledge is [1,0]; left [-1,0] and front [0,1] have no support.",
+    "action_constraints": {
+      "facts": "The center [0,0] is a hole. The only listed load-bearing ledge is [1,0]; left [-1,0] and front [0,1] have no support.",
+      "effect_fields": [
+        "position"
+      ],
+      "rules": [
+        {
+          "path": "parameters.position",
+          "op": "eq",
+          "value": [
+            1,
+            0
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F14_T1",
+    "object_kind": "evaluation",
+    "case_id": "F14_T1",
+    "family_id": "F14",
+    "source_experience_id": "F14_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a straight peg. Current condition: a straight bore requires coaxial entry.",
+    "goal": "insert a peg into a socket",
+    "failure_observation": "peg catches on socket rim",
+    "current_failed_action": {
+      "insertion_angle": "tilted"
+    },
+    "action_options": {
+      "A": "Start coaxial insertion at 0 degrees in the port frame.",
+      "B": "Start insertion at minus 30 degrees in the port frame.",
+      "C": "Start insertion at plus 30 degrees in the port frame.",
+      "D": "Start insertion at 60 degrees in the port frame."
+    },
+    "diagnosis_options": [
+      "insertion_angle",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+    "action_constraints": {
+      "facts": "The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F14_T2",
+    "object_kind": "evaluation",
+    "case_id": "F14_T2",
+    "family_id": "F14",
+    "source_experience_id": "F14_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a straight pin. Current condition: a straight bore requires coaxial entry.",
+    "goal": "insert a peg into a socket",
+    "failure_observation": "peg catches on socket rim",
+    "current_failed_action": {
+      "insertion_angle": "tilted"
+    },
+    "action_options": {
+      "A": "Start insertion at 60 degrees in the port frame.",
+      "B": "Start coaxial insertion at 0 degrees in the port frame.",
+      "C": "Start insertion at plus 30 degrees in the port frame.",
+      "D": "Start insertion at minus 30 degrees in the port frame."
+    },
+    "diagnosis_options": [
+      "insertion_angle",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+    "action_constraints": {
+      "facts": "The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F14_T3",
+    "object_kind": "evaluation",
+    "case_id": "F14_T3",
+    "family_id": "F14",
+    "source_experience_id": "F14_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a connector into a straight port. Current condition: a straight bore requires coaxial entry.",
+    "goal": "insert a peg into a socket",
+    "failure_observation": "peg catches on socket rim",
+    "current_failed_action": {
+      "insertion_angle": "tilted"
+    },
+    "action_options": {
+      "A": "Start insertion at 60 degrees in the port frame.",
+      "B": "Start coaxial insertion at 0 degrees in the port frame.",
+      "C": "Start insertion at plus 30 degrees in the port frame.",
+      "D": "Start insertion at minus 30 degrees in the port frame."
+    },
+    "diagnosis_options": [
+      "insertion_angle",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+    "action_constraints": {
+      "facts": "The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F14_T4",
+    "object_kind": "evaluation",
+    "case_id": "F14_T4",
+    "family_id": "F14",
+    "source_experience_id": "F14_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a tool shank into a guide bore. Current condition: a straight bore requires coaxial entry.",
+    "goal": "insert a tool shank into a bore",
+    "failure_observation": "peg catches on socket rim",
+    "current_failed_action": {
+      "insertion_angle": "tilted"
+    },
+    "action_options": {
+      "A": "Start coaxial insertion at 0 degrees in the port frame.",
+      "B": "Start insertion at plus 30 degrees in the port frame.",
+      "C": "Start insertion at 60 degrees in the port frame.",
+      "D": "Start insertion at minus 30 degrees in the port frame."
+    },
+    "diagnosis_options": [
+      "insertion_angle",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+    "action_constraints": {
+      "facts": "The straight bore axis is 0 degrees in the port frame. Entry angles within 2 degrees are accepted; the listed nonzero angles collide with its rim.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F14_T5",
+    "object_kind": "evaluation",
+    "case_id": "F14_T5",
+    "family_id": "F14",
+    "source_experience_id": "F14_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the port has a keyed angled entry. Current condition: a keyed angled entry is required.",
+    "goal": "insert a peg into a socket",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "insertion_angle": "tilted"
+    },
+    "action_options": {
+      "A": "Start entry at minus 30 degrees.",
+      "B": "Copy direct coaxial entry at 0 degrees.",
+      "C": "Start entry at the specifically commanded 60-degree angle.",
+      "D": "Start keyed entry at plus 30 degrees before later straightening."
+    },
+    "diagnosis_options": [
+      "insertion_angle",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The bore axis remains 0 degrees, but its keyed mouth requires an initial entry angle of plus 30 degrees, within 2, before straightening deeper inside. Direct 0-degree coaxial entry is blocked by that key. Minus-30 and 60 also miss the entry key.",
+    "action_constraints": {
+      "facts": "The bore axis remains 0 degrees, but its keyed mouth requires an initial entry angle of plus 30 degrees, within 2, before straightening deeper inside. Direct 0-degree coaxial entry is blocked by that key. Minus-30 and 60 also miss the entry key.",
+      "effect_fields": [
+        "angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.angle_degrees",
+          "op": "range",
+          "value": [
+            28,
+            32
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F15_T1",
+    "object_kind": "evaluation",
+    "case_id": "F15_T1",
+    "family_id": "F15",
+    "source_experience_id": "F15_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a hinged panel. Current condition: an unlatched hinged door permits rotation.",
+    "goal": "open a hinged door",
+    "failure_observation": "door does not rotate",
+    "current_failed_action": {
+      "force_direction": "toward hinge"
+    },
+    "action_options": {
+      "A": "Apply closing tangential force at 270 degrees.",
+      "B": "Pull radially outward at 0 degrees.",
+      "C": "Apply opening tangential force at 90 degrees.",
+      "D": "Pull radially toward the hinge at 180 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+    "action_constraints": {
+      "facts": "The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+      "effect_fields": [
+        "force_angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angle_degrees",
+          "op": "eq",
+          "value": 90
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F15_T2",
+    "object_kind": "evaluation",
+    "case_id": "F15_T2",
+    "family_id": "F15",
+    "source_experience_id": "F15_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a cupboard door. Current condition: an unlatched hinged door permits rotation.",
+    "goal": "open a hinged door",
+    "failure_observation": "door does not rotate",
+    "current_failed_action": {
+      "force_direction": "toward hinge"
+    },
+    "action_options": {
+      "A": "Apply opening tangential force at 90 degrees.",
+      "B": "Apply closing tangential force at 270 degrees.",
+      "C": "Pull radially toward the hinge at 180 degrees.",
+      "D": "Pull radially outward at 0 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+    "action_constraints": {
+      "facts": "The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+      "effect_fields": [
+        "force_angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angle_degrees",
+          "op": "eq",
+          "value": 90
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F15_T3",
+    "object_kind": "evaluation",
+    "case_id": "F15_T3",
+    "family_id": "F15",
+    "source_experience_id": "F15_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is an access hatch. Current condition: an unlatched hinged door permits rotation.",
+    "goal": "open a hinged door",
+    "failure_observation": "door does not rotate",
+    "current_failed_action": {
+      "force_direction": "toward hinge"
+    },
+    "action_options": {
+      "A": "Pull radially toward the hinge at 180 degrees.",
+      "B": "Apply closing tangential force at 270 degrees.",
+      "C": "Apply opening tangential force at 90 degrees.",
+      "D": "Pull radially outward at 0 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+    "action_constraints": {
+      "facts": "The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+      "effect_fields": [
+        "force_angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angle_degrees",
+          "op": "eq",
+          "value": 90
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F15_T4",
+    "object_kind": "evaluation",
+    "case_id": "F15_T4",
+    "family_id": "F15",
+    "source_experience_id": "F15_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a rotating service shield. Current condition: an unlatched hinged door permits rotation.",
+    "goal": "rotate a service shield",
+    "failure_observation": "door does not rotate",
+    "current_failed_action": {
+      "force_direction": "toward hinge"
+    },
+    "action_options": {
+      "A": "Apply opening tangential force at 90 degrees.",
+      "B": "Apply closing tangential force at 270 degrees.",
+      "C": "Pull radially toward the hinge at 180 degrees.",
+      "D": "Pull radially outward at 0 degrees."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+    "action_constraints": {
+      "facts": "The door is already unlatched. In its door frame, 90-degree tangential force opens it, 270 closes it, and radial 0/180-degree forces produce no opening rotation.",
+      "effect_fields": [
+        "force_angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "parameters.force_angle_degrees",
+          "op": "eq",
+          "value": 90
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F15_T5",
+    "object_kind": "evaluation",
+    "case_id": "F15_T5",
+    "family_id": "F15",
+    "source_experience_id": "F15_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the door is latched. Current condition: a latch prevents rotation until released.",
+    "goal": "open a hinged door",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "force_direction": "toward hinge"
+    },
+    "action_options": {
+      "A": "Apply closing tangential force at 270 degrees without latch release.",
+      "B": "Pull radially outward at 0 degrees without latch release.",
+      "C": "Copy opening tangential force at 90 degrees without latch release.",
+      "D": "Release the engaged latch before any opening force."
+    },
+    "diagnosis_options": [
+      "force_direction",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The latch is engaged and prevents opening rotation. Releasing it is the next prerequisite. Applying opening, closing, or radial force without release does not clear the latch.",
+    "action_constraints": {
+      "facts": "The latch is engaged and prevents opening rotation. Releasing it is the next prerequisite. Applying opening, closing, or radial force without release does not clear the latch.",
+      "effect_fields": [
+        "force_angle_degrees"
+      ],
+      "rules": [
+        {
+          "path": "kind",
+          "op": "eq",
+          "value": "release_latch"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F16_T1",
+    "object_kind": "evaluation",
+    "case_id": "F16_T1",
+    "family_id": "F16",
+    "source_experience_id": "F16_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a desk drawer. Current condition: a center handle is available on symmetric rails.",
+    "goal": "open a drawer",
+    "failure_observation": "drawer binds during pulling",
+    "current_failed_action": {
+      "contact_point": "off-center edge"
+    },
+    "action_options": {
+      "A": "Pull from the top lip.",
+      "B": "Pull from the center handle.",
+      "C": "Pull from the right edge.",
+      "D": "Pull from the left edge."
+    },
+    "diagnosis_options": [
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+    "action_constraints": {
+      "facts": "Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+      "effect_fields": [
+        "contact"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contact",
+          "op": "eq",
+          "value": "center_handle"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F16_T2",
+    "object_kind": "evaluation",
+    "case_id": "F16_T2",
+    "family_id": "F16",
+    "source_experience_id": "F16_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a cabinet drawer. Current condition: a center handle is available on symmetric rails.",
+    "goal": "open a drawer",
+    "failure_observation": "drawer binds during pulling",
+    "current_failed_action": {
+      "contact_point": "off-center edge"
+    },
+    "action_options": {
+      "A": "Pull from the top lip.",
+      "B": "Pull from the center handle.",
+      "C": "Pull from the right edge.",
+      "D": "Pull from the left edge."
+    },
+    "diagnosis_options": [
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+    "action_constraints": {
+      "facts": "Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+      "effect_fields": [
+        "contact"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contact",
+          "op": "eq",
+          "value": "center_handle"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F16_T3",
+    "object_kind": "evaluation",
+    "case_id": "F16_T3",
+    "family_id": "F16",
+    "source_experience_id": "F16_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a sliding bin. Current condition: a center handle is available on symmetric rails.",
+    "goal": "open a drawer",
+    "failure_observation": "drawer binds during pulling",
+    "current_failed_action": {
+      "contact_point": "off-center edge"
+    },
+    "action_options": {
+      "A": "Pull from the left edge.",
+      "B": "Pull from the right edge.",
+      "C": "Pull from the top lip.",
+      "D": "Pull from the center handle."
+    },
+    "diagnosis_options": [
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+    "action_constraints": {
+      "facts": "Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+      "effect_fields": [
+        "contact"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contact",
+          "op": "eq",
+          "value": "center_handle"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F16_T4",
+    "object_kind": "evaluation",
+    "case_id": "F16_T4",
+    "family_id": "F16",
+    "source_experience_id": "F16_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a rail-mounted instrument tray. Current condition: a center handle is available on symmetric rails.",
+    "goal": "extend a rail-mounted instrument tray",
+    "failure_observation": "drawer binds during pulling",
+    "current_failed_action": {
+      "contact_point": "off-center edge"
+    },
+    "action_options": {
+      "A": "Pull from the center handle.",
+      "B": "Pull from the right edge.",
+      "C": "Pull from the left edge.",
+      "D": "Pull from the top lip."
+    },
+    "diagnosis_options": [
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+    "action_constraints": {
+      "facts": "Only the center handle is rated to transmit drawer pulling load. The left edge, right edge, and top lip are unreinforced contacts that bind or detach under pulling.",
+      "effect_fields": [
+        "contact"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contact",
+          "op": "eq",
+          "value": "center_handle"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F16_T5",
+    "object_kind": "evaluation",
+    "case_id": "F16_T5",
+    "family_id": "F16",
+    "source_experience_id": "F16_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is the center handle is broken with a reinforced side handle available. Current condition: the center handle is broken and a reinforced side handle is specified.",
+    "goal": "open a drawer",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "contact_point": "off-center edge"
+    },
+    "action_options": {
+      "A": "Pull from the unreinforced top lip.",
+      "B": "Pull from the unreinforced left edge.",
+      "C": "Copy pulling from the broken center handle.",
+      "D": "Pull from the reinforced right-side handle."
+    },
+    "diagnosis_options": [
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The center handle is broken. The separate reinforced right-side handle is rated for pulling; the left edge and top lip remain unreinforced. The right-side handle is not the right edge surface.",
+    "action_constraints": {
+      "facts": "The center handle is broken. The separate reinforced right-side handle is rated for pulling; the left edge and top lip remain unreinforced. The right-side handle is not the right edge surface.",
+      "effect_fields": [
+        "contact"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contact",
+          "op": "eq",
+          "value": "right_side_handle"
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F17_T1",
+    "object_kind": "evaluation",
+    "case_id": "F17_T1",
+    "family_id": "F17",
+    "source_experience_id": "F17_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a soft pouch. Current condition: a deformable load permits distributed support.",
+    "goal": "lift a soft bag",
+    "failure_observation": "bag folds and contents spill",
+    "current_failed_action": {
+      "grasp_distribution": "single pinch"
+    },
+    "action_options": {
+      "A": "Pinch only the right soft patch.",
+      "B": "Pinch only the center seam.",
+      "C": "Support both marked left and right patches together.",
+      "D": "Pinch only the left soft patch."
+    },
+    "diagnosis_options": [
+      "grasp_distribution",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+    "action_constraints": {
+      "facts": "Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+      "effect_fields": [
+        "contacts"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contacts",
+          "op": "eq",
+          "value": [
+            "soft_left",
+            "soft_right"
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F17_T2",
+    "object_kind": "evaluation",
+    "case_id": "F17_T2",
+    "family_id": "F17",
+    "source_experience_id": "F17_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a soft bag. Current condition: a deformable load permits distributed support.",
+    "goal": "lift a soft bag",
+    "failure_observation": "bag folds and contents spill",
+    "current_failed_action": {
+      "grasp_distribution": "single pinch"
+    },
+    "action_options": {
+      "A": "Support both marked left and right patches together.",
+      "B": "Pinch only the right soft patch.",
+      "C": "Pinch only the left soft patch.",
+      "D": "Pinch only the center seam."
+    },
+    "diagnosis_options": [
+      "grasp_distribution",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+    "action_constraints": {
+      "facts": "Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+      "effect_fields": [
+        "contacts"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contacts",
+          "op": "eq",
+          "value": [
+            "soft_left",
+            "soft_right"
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F17_T3",
+    "object_kind": "evaluation",
+    "case_id": "F17_T3",
+    "family_id": "F17",
+    "source_experience_id": "F17_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a flexible fabric bundle. Current condition: a deformable load permits distributed support.",
+    "goal": "lift a soft bag",
+    "failure_observation": "bag folds and contents spill",
+    "current_failed_action": {
+      "grasp_distribution": "single pinch"
+    },
+    "action_options": {
+      "A": "Pinch only the left soft patch.",
+      "B": "Pinch only the center seam.",
+      "C": "Pinch only the right soft patch.",
+      "D": "Support both marked left and right patches together."
+    },
+    "diagnosis_options": [
+      "grasp_distribution",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+    "action_constraints": {
+      "facts": "Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+      "effect_fields": [
+        "contacts"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contacts",
+          "op": "eq",
+          "value": [
+            "soft_left",
+            "soft_right"
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F17_T4",
+    "object_kind": "evaluation",
+    "case_id": "F17_T4",
+    "family_id": "F17",
+    "source_experience_id": "F17_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a flexible sample carrier. Current condition: a deformable load permits distributed support.",
+    "goal": "lift a flexible sample carrier",
+    "failure_observation": "bag folds and contents spill",
+    "current_failed_action": {
+      "grasp_distribution": "single pinch"
+    },
+    "action_options": {
+      "A": "Pinch only the center seam.",
+      "B": "Pinch only the right soft patch.",
+      "C": "Support both marked left and right patches together.",
+      "D": "Pinch only the left soft patch."
+    },
+    "diagnosis_options": [
+      "grasp_distribution",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+    "action_constraints": {
+      "facts": "Retaining this deformable load requires distributed support at both marked left and right patches. A single left pinch, single right pinch, or single center-seam pinch folds the load and cannot retain its contents.",
+      "effect_fields": [
+        "contacts"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contacts",
+          "op": "eq",
+          "value": [
+            "soft_left",
+            "soft_right"
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F17_T5",
+    "object_kind": "evaluation",
+    "case_id": "F17_T5",
+    "family_id": "F17",
+    "source_experience_id": "F17_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is a marked sensitive zone forbids distributed pressure. Current condition: distributed grasp would press a marked sensitive zone.",
+    "goal": "lift a soft bag",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "grasp_distribution": "single pinch"
+    },
+    "action_options": {
+      "A": "Pinch only the sensitive left soft patch.",
+      "B": "Lift only from the designated rigid loop.",
+      "C": "Copy distributed support across the sensitive left and right patches.",
+      "D": "Pinch only the sensitive center seam."
+    },
+    "diagnosis_options": [
+      "grasp_distribution",
+      "contact_point",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The left/right soft patches and center seam are sensitive to grasp pressure. A separate designated rigid loop is load-bearing and safe. The loop is not any soft patch or center seam.",
+    "action_constraints": {
+      "facts": "The left/right soft patches and center seam are sensitive to grasp pressure. A separate designated rigid loop is load-bearing and safe. The loop is not any soft patch or center seam.",
+      "effect_fields": [
+        "contacts"
+      ],
+      "rules": [
+        {
+          "path": "parameters.contacts",
+          "op": "eq",
+          "value": [
+            "rigid_loop"
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F18_T1",
+    "object_kind": "evaluation",
+    "case_id": "F18_T1",
+    "family_id": "F18",
+    "source_experience_id": "F18_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a two-arm box. Current condition: both supports are ready before simultaneous lift.",
+    "goal": "lift a load with two arms",
+    "failure_observation": "load twists during lift",
+    "current_failed_action": {
+      "action_timing": "one arm early"
+    },
+    "action_options": {
+      "A": "Start both supports at 0 seconds.",
+      "B": "Start left at 0.4 seconds and right at 0 seconds.",
+      "C": "Start left at 0 seconds and right at 0.4 seconds.",
+      "D": "Start left at 0 seconds and right at 0.15 seconds."
+    },
+    "diagnosis_options": [
+      "action_timing",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+    "action_constraints": {
+      "facts": "Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+      "effect_fields": [
+        "start_times"
+      ],
+      "rules": [
+        {
+          "path": "derived.start_difference",
+          "op": "range",
+          "value": [
+            -0.05,
+            0.05
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F18_T2",
+    "object_kind": "evaluation",
+    "case_id": "F18_T2",
+    "family_id": "F18",
+    "source_experience_id": "F18_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a two-arm tray. Current condition: both supports are ready before simultaneous lift.",
+    "goal": "lift a load with two arms",
+    "failure_observation": "load twists during lift",
+    "current_failed_action": {
+      "action_timing": "one arm early"
+    },
+    "action_options": {
+      "A": "Start both supports at 0 seconds.",
+      "B": "Start left at 0 seconds and right at 0.15 seconds.",
+      "C": "Start left at 0.4 seconds and right at 0 seconds.",
+      "D": "Start left at 0 seconds and right at 0.4 seconds."
+    },
+    "diagnosis_options": [
+      "action_timing",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+    "action_constraints": {
+      "facts": "Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+      "effect_fields": [
+        "start_times"
+      ],
+      "rules": [
+        {
+          "path": "derived.start_difference",
+          "op": "range",
+          "value": [
+            -0.05,
+            0.05
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F18_T3",
+    "object_kind": "evaluation",
+    "case_id": "F18_T3",
+    "family_id": "F18",
+    "source_experience_id": "F18_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a two-support panel. Current condition: both supports are ready before simultaneous lift.",
+    "goal": "lift a load with two arms",
+    "failure_observation": "load twists during lift",
+    "current_failed_action": {
+      "action_timing": "one arm early"
+    },
+    "action_options": {
+      "A": "Start left at 0 seconds and right at 0.4 seconds.",
+      "B": "Start both supports at 0 seconds.",
+      "C": "Start left at 0.4 seconds and right at 0 seconds.",
+      "D": "Start left at 0 seconds and right at 0.15 seconds."
+    },
+    "diagnosis_options": [
+      "action_timing",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+    "action_constraints": {
+      "facts": "Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+      "effect_fields": [
+        "start_times"
+      ],
+      "rules": [
+        {
+          "path": "derived.start_difference",
+          "op": "range",
+          "value": [
+            -0.05,
+            0.05
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F18_T4",
+    "object_kind": "evaluation",
+    "case_id": "F18_T4",
+    "family_id": "F18",
+    "source_experience_id": "F18_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a two-actuator platform. Current condition: both supports are ready before simultaneous lift.",
+    "goal": "raise a two-actuator platform",
+    "failure_observation": "load twists during lift",
+    "current_failed_action": {
+      "action_timing": "one arm early"
+    },
+    "action_options": {
+      "A": "Start both supports at 0 seconds.",
+      "B": "Start left at 0.4 seconds and right at 0 seconds.",
+      "C": "Start left at 0 seconds and right at 0.15 seconds.",
+      "D": "Start left at 0 seconds and right at 0.4 seconds."
+    },
+    "diagnosis_options": [
+      "action_timing",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+    "action_constraints": {
+      "facts": "Both supports are ready, with no engaged lock. A relative lift-start difference no greater than 0.05 seconds retains level support; larger differences twist the load. A common delay alone is not a different coordination behavior.",
+      "effect_fields": [
+        "start_times"
+      ],
+      "rules": [
+        {
+          "path": "derived.start_difference",
+          "op": "range",
+          "value": [
+            -0.05,
+            0.05
+          ]
+        }
+      ],
+      "model": "predicates",
+      "world": {}
+    }
+  },
+  {
+    "object_id": "F18_T5",
+    "object_kind": "evaluation",
+    "case_id": "F18_T5",
+    "family_id": "F18",
+    "source_experience_id": "F18_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is one support is blocked by a safety lock. Current condition: one support cannot start until a safety lock is released.",
+    "goal": "lift a load with two arms",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "action_timing": "one arm early"
+    },
+    "action_options": {
+      "A": "Start a synchronized lift before releasing the lock.",
+      "B": "Lift only the locked right support.",
+      "C": "Release the lock, then lift synchronously.",
+      "D": "Lift only the left support, without releasing the right-support lock."
+    },
+    "diagnosis_options": [
+      "action_timing",
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The right support is safety-locked. A synchronized lift is permitted only after release. A left-only or right-only lift does not provide two-sided support. The permitted order is release, then synchronized lift.",
+    "action_constraints": {
+      "facts": "The right support is safety-locked. A synchronized lift is permitted only after release. A left-only or right-only lift does not provide two-sided support. The permitted order is release, then synchronized lift.",
+      "effect_fields": [],
+      "rules": [],
+      "model": "two_support_sequence",
+      "world": {
+        "locked": true
+      }
+    }
+  },
+  {
+    "object_id": "F19_T1",
+    "object_kind": "evaluation",
+    "case_id": "F19_T1",
+    "family_id": "F19",
+    "source_experience_id": "F19_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a lidded box. Current condition: opening the lid is permitted before insertion.",
+    "goal": "place a part in a lidded container",
+    "failure_observation": "part collides with closed lid",
+    "current_failed_action": {
+      "subgoal_order": "insert before opening lid"
+    },
+    "action_options": {
+      "A": "Open the lid, then insert the part.",
+      "B": "Insert before opening the lid.",
+      "C": "Open the lid, insert the part, then withdraw it again.",
+      "D": "Open the lid, close it again, then insert."
+    },
+    "diagnosis_options": [
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+    "action_constraints": {
+      "facts": "Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+      "effect_fields": [],
+      "rules": [],
+      "model": "container_sequence",
+      "world": {
+        "pressure_equalized": true,
+        "lid_open": false
+      }
+    }
+  },
+  {
+    "object_id": "F19_T2",
+    "object_kind": "evaluation",
+    "case_id": "F19_T2",
+    "family_id": "F19",
+    "source_experience_id": "F19_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is a lidded bin. Current condition: opening the lid is permitted before insertion.",
+    "goal": "place a part in a lidded container",
+    "failure_observation": "part collides with closed lid",
+    "current_failed_action": {
+      "subgoal_order": "insert before opening lid"
+    },
+    "action_options": {
+      "A": "Insert before opening the lid.",
+      "B": "Open the lid, then insert the part.",
+      "C": "Open the lid, insert the part, then withdraw it again.",
+      "D": "Open the lid, close it again, then insert."
+    },
+    "diagnosis_options": [
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+    "action_constraints": {
+      "facts": "Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+      "effect_fields": [],
+      "rules": [],
+      "model": "container_sequence",
+      "world": {
+        "pressure_equalized": true,
+        "lid_open": false
+      }
+    }
+  },
+  {
+    "object_id": "F19_T3",
+    "object_kind": "evaluation",
+    "case_id": "F19_T3",
+    "family_id": "F19",
+    "source_experience_id": "F19_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is a covered loading bay. Current condition: opening the lid is permitted before insertion.",
+    "goal": "place a part in a lidded container",
+    "failure_observation": "part collides with closed lid",
+    "current_failed_action": {
+      "subgoal_order": "insert before opening lid"
+    },
+    "action_options": {
+      "A": "Open the lid, close it again, then insert.",
+      "B": "Open the lid, then insert the part.",
+      "C": "Open the lid, insert the part, then withdraw it again.",
+      "D": "Insert before opening the lid."
+    },
+    "diagnosis_options": [
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+    "action_constraints": {
+      "facts": "Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+      "effect_fields": [],
+      "rules": [],
+      "model": "container_sequence",
+      "world": {
+        "pressure_equalized": true,
+        "lid_open": false
+      }
+    }
+  },
+  {
+    "object_id": "F19_T4",
+    "object_kind": "evaluation",
+    "case_id": "F19_T4",
+    "family_id": "F19",
+    "source_experience_id": "F19_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is a sealed service chamber. Current condition: opening the lid is permitted before insertion.",
+    "goal": "load a sealed service chamber",
+    "failure_observation": "part collides with closed lid",
+    "current_failed_action": {
+      "subgoal_order": "insert before opening lid"
+    },
+    "action_options": {
+      "A": "Open the lid, insert the part, then withdraw it again.",
+      "B": "Open the lid, then insert the part.",
+      "C": "Open the lid, close it again, then insert.",
+      "D": "Insert before opening the lid."
+    },
+    "diagnosis_options": [
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+    "action_constraints": {
+      "facts": "Initially the lid is closed and pressure is already equalized. Insertion requires the lid open. Closing the lid before inserting blocks entry; opening alone does not insert the part. The final placement must leave the part inside; withdrawing it reverses that goal.",
+      "effect_fields": [],
+      "rules": [],
+      "model": "container_sequence",
+      "world": {
+        "pressure_equalized": true,
+        "lid_open": false
+      }
+    }
+  },
+  {
+    "object_id": "F19_T5",
+    "object_kind": "evaluation",
+    "case_id": "F19_T5",
+    "family_id": "F19",
+    "source_experience_id": "F19_E00",
+    "transfer_level": "boundary",
+    "scenario": "The new target is pressure must be equalized before opening. Current condition: opening is forbidden until pressure is equalized.",
+    "goal": "place a part in a lidded container",
+    "failure_observation": "The current constraints invalidate the previous correction.",
+    "current_failed_action": {
+      "subgoal_order": "insert before opening lid"
+    },
+    "action_options": {
+      "A": "Copy opening then insertion without pressure equalization.",
+      "B": "Equalize pressure, open the lid, then insert.",
+      "C": "Equalize pressure, then try inserting before opening.",
+      "D": "Try inserting before equalizing or opening."
+    },
+    "diagnosis_options": [
+      "subgoal_order",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: Initially the lid is closed and pressure is not equalized. Opening is forbidden until equalization. Insertion requires an open lid. Equalizing alone does not open it; inserting first remains blocked.",
+    "action_constraints": {
+      "facts": "Initially the lid is closed and pressure is not equalized. Opening is forbidden until equalization. Insertion requires an open lid. Equalizing alone does not open it; inserting first remains blocked.",
+      "effect_fields": [],
+      "rules": [],
+      "model": "container_sequence",
+      "world": {
+        "pressure_equalized": false,
+        "lid_open": false
+      }
+    }
+  },
+  {
+    "object_id": "F20_T1",
+    "object_kind": "evaluation",
+    "case_id": "F20_T1",
+    "family_id": "F20",
+    "source_experience_id": "F20_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is the same user mug. Current condition: the same user has an active confirmed right preference.",
+    "goal": "place a user item in a preferred location",
+    "failure_observation": "user rejects default placement",
+    "current_failed_action": {
+      "preference_state": "default left"
+    },
+    "action_options": {
+      "A": "Place the item at the current user confirmed right location.",
+      "B": "Place the item at the left location.",
+      "C": "Place the item at the center location.",
+      "D": "Refuse the entire placement task without placing the item."
+    },
+    "diagnosis_options": [
+      "preference_state",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+    "action_constraints": {
+      "facts": "The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+      "effect_fields": [
+        "location"
+      ],
+      "rules": [],
+      "model": "preference",
+      "world": {
+        "preference_known": true,
+        "current_preference": "right"
+      }
+    }
+  },
+  {
+    "object_id": "F20_T2",
+    "object_kind": "evaluation",
+    "case_id": "F20_T2",
+    "family_id": "F20",
+    "source_experience_id": "F20_E00",
+    "transfer_level": "near",
+    "scenario": "The new target is the same user book. Current condition: the same user has an active confirmed right preference.",
+    "goal": "place a user item in a preferred location",
+    "failure_observation": "user rejects default placement",
+    "current_failed_action": {
+      "preference_state": "default left"
+    },
+    "action_options": {
+      "A": "Place the item at the left location.",
+      "B": "Place the item at the current user confirmed right location.",
+      "C": "Place the item at the center location.",
+      "D": "Refuse the entire placement task without placing the item."
+    },
+    "diagnosis_options": [
+      "preference_state",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions.\nExplicit action-space facts: The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+    "action_constraints": {
+      "facts": "The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+      "effect_fields": [
+        "location"
+      ],
+      "rules": [],
+      "model": "preference",
+      "world": {
+        "preference_known": true,
+        "current_preference": "right"
+      }
+    }
+  },
+  {
+    "object_id": "F20_T3",
+    "object_kind": "evaluation",
+    "case_id": "F20_T3",
+    "family_id": "F20",
+    "source_experience_id": "F20_E00",
+    "transfer_level": "medium",
+    "scenario": "The new target is the same user workspace tool. Current condition: the same user has an active confirmed right preference.",
+    "goal": "place a user item in a preferred location",
+    "failure_observation": "user rejects default placement",
+    "current_failed_action": {
+      "preference_state": "default left"
+    },
+    "action_options": {
+      "A": "Place the item at the left location.",
+      "B": "Refuse the entire placement task without placing the item.",
+      "C": "Place the item at the current user confirmed right location.",
+      "D": "Place the item at the center location."
+    },
+    "diagnosis_options": [
+      "preference_state",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+    "action_constraints": {
+      "facts": "The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+      "effect_fields": [
+        "location"
+      ],
+      "rules": [],
+      "model": "preference",
+      "world": {
+        "preference_known": true,
+        "current_preference": "right"
+      }
+    }
+  },
+  {
+    "object_id": "F20_T4",
+    "object_kind": "evaluation",
+    "case_id": "F20_T4",
+    "family_id": "F20",
+    "source_experience_id": "F20_E00",
+    "transfer_level": "far",
+    "scenario": "The new target is the same user virtual control panel. Current condition: the same user has an active confirmed right preference.",
+    "goal": "position a virtual control panel for the same user",
+    "failure_observation": "user rejects default placement",
+    "current_failed_action": {
+      "preference_state": "default left"
+    },
+    "action_options": {
+      "A": "Refuse the entire placement task without placing the item.",
+      "B": "Place the item at the center location.",
+      "C": "Place the item at the current user confirmed right location.",
+      "D": "Place the item at the left location."
+    },
+    "diagnosis_options": [
+      "preference_state",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Use the current target dimensions and accessible coordinates; do not copy source dimensions.\nExplicit action-space facts: The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+    "action_constraints": {
+      "facts": "The current user already has an active confirmed right preference. Left, center, and right are available placement regions. Refusing the entire task leaves the requested placement incomplete.",
+      "effect_fields": [
+        "location"
+      ],
+      "rules": [],
+      "model": "preference",
+      "world": {
+        "preference_known": true,
+        "current_preference": "right"
+      }
+    }
+  },
+  {
+    "object_id": "F20_T5",
+    "object_kind": "evaluation",
+    "case_id": "F20_T5",
+    "family_id": "F20",
+    "source_experience_id": "F20_E00",
+    "transfer_level": "boundary",
+    "scenario": "The prior preference demonstration concerns User A. The current user is User B, who has not expressed a placement preference. The item has not yet been placed.",
+    "goal": "place a user item in a preferred location",
+    "failure_observation": "The current user preference has not been established; the prior user-specific correction cannot resolve it.",
+    "current_failed_action": {
+      "preference_state": "not established for User B"
+    },
+    "action_options": {
+      "A": "Ask User B for their placement preference, obtain it, then choose the placement location accordingly.",
+      "B": "Place the item on the left by an arbitrary default, without obtaining User B preference.",
+      "C": "Place the item on the right using User A confirmed preference, without obtaining User B preference.",
+      "D": "Refuse the entire placement task and do not obtain User B preference."
+    },
+    "diagnosis_options": [
+      "preference_state",
+      "display_color",
+      "motion_duration"
+    ],
+    "task_constraints": "Complete the placement task for User B. Do not automatically transfer a different user preference. Resolve User B preference before selecting a placement location.\nExplicit action-space facts: The current User B preference is unknown. It must be obtained before choosing placement; a chance match without preference resolution does not satisfy the task. Refusal does not complete it.",
+    "action_constraints": {
+      "facts": "The current User B preference is unknown. It must be obtained before choosing placement; a chance match without preference resolution does not satisfy the task. Refusal does not complete it.",
+      "effect_fields": [
+        "location"
+      ],
+      "rules": [],
+      "model": "preference",
+      "world": {
+        "preference_known": false,
+        "current_preference": null
+      }
+    }
+  }
+]
